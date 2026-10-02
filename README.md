@@ -1,6 +1,6 @@
 # Fila Clara — apoio à disciplina D1.1
 
-Este pacote apoia as seis aulas de **Engenharia de Software na Era da IA Generativa (24h)**. Fila Clara é um caso fictício de chamados internos. Alguns exercícios contêm código legado a ser corrigido. As decisões e sua verificação são o foco da disciplina.
+Este pacote apoia as seis aulas de **Engenharia de Software na Era da IA Generativa (24h)**. Fila Clara é um caso fictício de chamados internos. As atividades pedem que você analise situações, confira resultados e justifique decisões. Algumas apresentam código para revisão; os exercícios AV1 podem ser resolvidos por escrito com os dados fornecidos.
 
 O caso e suas verificações já podem ser executados. O professor conduz as demonstrações; em B3, há também [25min de execução acompanhada](apoio/execucao-acompanhada-b3.md) no próprio ambiente, sem entrega ou nota. Cada bloco reserva 35min a um desafio avaliativo individual com consulta; as instruções indicam insumos próprios, entregável e rubrica. Não há entrega coletiva ou síntese adicional obrigatória.
 
@@ -17,14 +17,20 @@ Obtenha o pacote disponibilizado pelo professor e abra esta pasta. A execução 
 | `apoio/` | Respostas simuladas identificadas e transcrição de execução |
 | `exercicios/aula-1/` a `aula-6/` | Instruções e registros de cada aula |
 
-## Fluxo de trabalho
+## Comece pelos exercícios da sua aula
 
-Desafios AV1: [B1 — delegação](exercicios/aula-1/README.md) · [B2 — contexto](exercicios/aula-2/README.md) · [B3 — ciclo de desenvolvimento](exercicios/aula-3/README.md) · [B4 — verificação](exercicios/aula-4/README.md) · [B5 — política de uso](exercicios/aula-5/README.md) · [B6 — maturidade](exercicios/aula-6/README.md).
+Leia o [guia de preenchimento e entrega](exercicios/README.md). Ele explica qual arquivo preencher, o que é uma evidência e como registrá-la sem precisar executar código ou usar IA.
 
-1. Leia a atividade da aula e o contrato do caso.
-2. Registre sua modalidade: execução própria, transcrição verificada ou simulação.
-3. Inspecione o artefato, registre decisões e execute as verificações quando aplicável.
-4. Entregue a evidência solicitada no canal informado pelo professor, declarando a assistência utilizada.
+Exercícios AV1: [aula 1 — delegação](exercicios/aula-1/README.md) · [aula 2 — análise de respostas](exercicios/aula-2/README.md) · [aula 3 — testes e documentação](exercicios/aula-3/README.md) · [aula 4 — revisão de código](exercicios/aula-4/README.md) · [aula 5 — uso corporativo](exercicios/aula-5/README.md) · [aula 6 — maturidade](exercicios/aula-6/README.md).
+
+1. Leia o enunciado (`README.md`) da aula e os dados indicados nele.
+2. Faça uma cópia do `template-registro.md` dessa aula ou copie seu conteúdo para um editor de texto. O HTML é uma versão de leitura, não um formulário.
+3. Preencha as respostas e as evidências no mesmo documento, com até uma página. Informe se sua análise foi manual ou se houve execução e declare eventual uso de IA.
+4. Confira o checklist e envie o registro pelo canal e no formato informados pelo professor. Não é necessário enviar commit ou alterar este repositório para entregar.
+
+## Execução opcional do código do caso
+
+O comando abaixo permite explorar o código do caso e suas verificações. Ele não é um requisito para preencher os registros AV1; siga o enunciado da aula para saber o que analisar.
 
 Execute nesta pasta:
 

@@ -2,11 +2,17 @@
 
 **Individual — 35min — B4, 02/10/2026, 21h15–21h50 (Brasília).** Integra AV1, que vale 20% pela média simples dos desafios dos blocos com presença. [Avaliação e rubrica pública](../../avaliacao.md).
 
-## Objetivo
+## O que você vai fazer
 
-Quero confrontar uma proposta de listagem com R2, avaliar o que seu teste cobre e justificar o aceite ou o ajuste necessário com revalidação.
+Você vai revisar a função e o teste apresentados abaixo. Compare o comportamento da proposta com R2, explique o que o teste consegue verificar e escreva uma decisão sobre aceitar ou ajustar a proposta.
 
-## Contexto e insumos
+## O que entregar e como começar
+
+Entregue uma análise escrita de até uma página, usando o modelo. Ela deve conter a comparação das saídas, a análise do teste, sua decisão, um ajuste proposto e um caso para conferir esse ajuste. Você pode fazer tudo por leitura do código; executar uma cópia isolada é opcional.
+
+Faça uma cópia do [modelo de resposta](template-registro.md) e preencha os campos. A versão HTML é para leitura, não é um formulário. Veja o [guia de preenchimento e exemplos de evidência](../README.md) se precisar de ajuda com o formato.
+
+## Situação e materiais para análise
 
 Uma pessoa entregou o candidato abaixo e um teste como suporte à revisão. **São artefatos simulados criados para esta avaliação**, distintos dos exemplos demonstrados pelo professor. O nome do campo é `estado`.
 
@@ -32,26 +38,30 @@ def listar_ativos_proposta(chamados):
 
 Use o [template individual](template-registro.md). Inspeção por tabela é suficiente; executar o candidato em uma cópia isolada é opcional.
 
-## Passos — 35min
+## Como fazer — 35min
 
-1. **Ler — 5min.** Registre o comportamento esperado por R2 antes de analisar o candidato e o teste.
-2. **Produzir individualmente — 20min.** Para a entrada de revisão, registre os IDs esperados e os retornados pelo candidato, explicando o mecanismo. Marque o retorno como inferido por inspeção ou observado em execução. Analise se o teste entregue permite distinguir uma implementação conforme R2 de outra que não a cumpra. Emita parecer de aceite, aceite condicionado ou rejeição. Proponha um ajuste, em texto ou código, e um caso de revalidação com entrada/esperado e resultado previsto ou observado. Compare com a alternativa de manter a proposta atual e explicite um limite.
-3. **Revisar pela rubrica — 5min.** Confira contrato, tabela, alcance do teste e revalidação; não descreva previsão como execução realizada.
-4. **Entregar — 5min.** Finalize um registro individual de até uma página, pelo canal a ser informado pelo professor.
+1. **Leia a regra — 5min.** Escreva no modelo o que R2 exige da listagem, antes de examinar a proposta e o teste.
+2. **Faça a revisão — 20min.** Para a entrada TR-41, TR-42, TR-43, TR-44, preencha os IDs esperados por R2 e os IDs que a função proposta retornaria. Mostre o trecho de código que explica esse retorno e diga se o deduziu por leitura ou o observou em execução. Analise também o teste fornecido: ele distinguiria uma função que cumpre R2 de uma que descumpre a regra? Explique usando a entrada e a comparação de IDs feita pelo teste.
+   Escreva sua decisão: **aceitar, aceitar com condições ou rejeitar**, com motivo. Compare manter a proposta com ajustá-la e indique quem aprovaria o resultado. Descreva o ajuste em texto ou código. Complete a segunda tabela com um caso para conferir o ajuste: entrada, saída esperada e resultado previsto por leitura ou observado em execução. Termine com um limite da análise e uma condição para rever sua decisão.
+3. **Confira o registro — 5min.** Verifique se regra, saídas, explicação do teste e ajuste são coerentes. Um resultado previsto por leitura deve ser identificado como tal.
+4. **Finalize a entrega — 5min.** Inclua nome, origem dos materiais e declaração de uso de IA. Envie o registro pelo canal e no formato informados pelo professor.
 
-## Entrega e checklist
+## Qual é a evidência da aula 4?
 
-- [ ] R2, IDs esperados e retorno do candidato com status explícito.
-- [ ] Trecho de código/asserção essencial para explicar o comportamento e a cobertura.
-- [ ] Parecer, comparação, ajuste e um caso de revalidação.
-- [ ] Limite remanescente e condição que mudaria o parecer.
+Use as tabelas de comparação e copie somente o trecho de código ou a comparação de IDs do teste que sustenta sua explicação. “Revalidar” significa conferir de novo depois do ajuste proposto. Essa conferência pode ser feita por leitura, explicando o novo resultado previsto; não exige um log de execução. Se optar por executar, inclua comando e trecho relevante da saída, no mesmo registro.
 
-**Critério de conclusão:** outro leitor consegue refazer sua inspeção, avaliar o alcance do teste e conferir o ajuste proposto contra o mesmo requisito.
+## Confira antes de entregar
+
+- [ ] Comparei os IDs esperados por R2 com o retorno da proposta e informei se fiz leitura ou execução.
+- [ ] Indiquei o trecho de código e a comparação do teste que sustentam a análise.
+- [ ] Escrevi decisão, comparação entre manter e ajustar, responsável e ajuste proposto.
+- [ ] Descrevi um caso para conferir o ajuste, um limite e uma condição para rever a decisão.
+- [ ] Declarei eventual IA e reuni tudo em até uma página.
+
+## Como a atividade será avaliada
 
 | Critério AV1 | Peso | Indicadores deste desafio |
 |---|---:|---|
 | Aplicação/decisão | 30% | Parecer vinculado a R2; comparação de manter/ajustar e responsabilidade de aceite. |
 | Evidência | 40% | Entrada, esperado, retorno, mecanismo e alcance da asserção rastreáveis. |
 | Limites/alternativa | 30% | Ajuste e revalidação coerentes; limite de cobertura e condição de revisão. |
-
-**Dica:** teste que passa em uma entrada pode não distinguir comportamentos concorrentes. A via textual vale pelos mesmos critérios; não se exige Git, publicação, conta ou API. Declare eventual assistência de IA e use apenas os dados fictícios.

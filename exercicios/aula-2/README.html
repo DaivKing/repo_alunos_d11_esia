@@ -18,9 +18,12 @@
 </nav>
 </header>
 <p><strong>Individual — 35min — B2, 26/09/2026, 11h15–11h50 (Brasília).</strong> Integra AV1, que vale 20% pela média simples dos desafios dos blocos com presença. <a href="../../avaliacao.html">Avaliação e rubrica pública</a>.</p>
-<div class="secao"><h2 id="objetivo">Objetivo</h2></div>
-<p>Quero formular critérios de verificação, aplicá-los a duas respostas e decidir o que cada evidência permite concluir sobre correção e repetição.</p>
-<div class="secao"><h2 id="contexto-e-insumos">Contexto e insumos</h2></div>
+<div class="secao"><h2 id="o-que-voce-vai-fazer">O que você vai fazer</h2></div>
+<p>Você vai conferir duas respostas fornecidas no enunciado. Na resposta A, refaça os cálculos usando R1. Na resposta B, avalie separadamente a classificação apresentada e a conclusão sobre o comportamento do modelo.</p>
+<div class="secao"><h2 id="o-que-entregar-e-como-comecar">O que entregar e como começar</h2></div>
+<p>Preencha a tabela com os dois pares da resposta A e responda aos campos sobre B. Termine com sua decisão sobre cada resposta e uma proposta de verificação. Entregue um único registro de até uma página; não é necessário gerar novas respostas com IA.</p>
+<p>Faça uma cópia do <a href="template-registro.html">modelo de resposta</a> e preencha os campos. A versão HTML é para leitura, não é um formulário. Veja o <a href="../README.html">guia de preenchimento e exemplos de evidência</a> se precisar de ajuda com o formato.</p>
+<div class="secao"><h2 id="situacao-e-materiais-para-analise">Situação e materiais para análise</h2></div>
 <p>A equipe Fila Clara recebeu duas respostas para revisão. <strong>As respostas A e B são simulações didáticas novas, escritas para esta avaliação. Não resultam de consultas reais a um modelo.</strong> Não há medição disponível de tokens, custo, latência, configuração ou versão do modelo.</p>
 <p><strong>Contrato R1:</strong> impacto e urgência são inteiros de 1 a 3. Some os dois: escore ≥ 5 dá <code>alta</code>; escore de 3 a 4 dá <code>media</code>; escore &lt; 3 dá <code>baixa</code>. <a href="../../caso/regras.html">Contrato completo</a>.</p>
 <p>Primeiro registre seu critério de correção e o tipo de evidência necessário para sustentar uma afirmação geral sobre comportamento. Depois examine as respostas.</p>
@@ -29,21 +32,25 @@
 <p><strong>Resposta B — simulada.</strong> “Repeti três vezes o pedido ‘classifique impacto=2, urgencia=3’. As três saídas foram ‘alta’. Isso prova que o modelo é determinístico e sempre entrega a classificação correta, inclusive em outros chamados.”</p>
 </blockquote>
 <p>Os três resultados de B são parte da narrativa simulada, e não execuções observadas por você. Use o <a href="template-registro.html">template individual</a>.</p>
-<div class="secao"><h2 id="passos-35min">Passos — 35min</h2></div>
+<div class="secao"><h2 id="como-fazer-35min">Como fazer — 35min</h2></div>
 <ol>
-<li><strong>Ler — 5min.</strong> Leia R1 e registre os critérios antes de avaliar os textos A e B.</li>
-<li><strong>Produzir individualmente — 20min.</strong> Verifique os dois pares apresentados em A: registre esperado por R1, resposta e conclusão. Analise separadamente em B a classificação daquele par e a alegação geral. Aponte um contraexemplo ou uma condição que a evidência fornecida não cobre. Decida aceitar, aceitar parcialmente ou rejeitar cada resposta para uso pela equipe; proponha uma alternativa de verificação. Diferencie cálculo/inspeção, narrativa simulada e execução real.</li>
-<li><strong>Revisar pela rubrica — 5min.</strong> Confira se as conclusões têm o mesmo alcance das evidências e se informação não disponível foi marcada como tal.</li>
-<li><strong>Entregar — 5min.</strong> Envie um registro individual de até uma página pelo canal a ser informado pelo professor.</li>
+<li><strong>Registre os critérios — 5min.</strong> No início do modelo, escreva como R1 permite conferir uma classificação e que tipo de verificação seria necessário para sustentar uma afirmação sobre outras entradas ou repetições. Depois analise A e B.</li>
+<li><strong>Preencha a análise — 20min.</strong> Comece pelas duas linhas da tabela de A. Para <code>(2, 3)</code> e <code>(3, 1)</code>, mostre a soma, a classificação esperada por R1, o que A respondeu e se os resultados coincidem. Em seguida, responda aos campos de B: o que é possível concluir sobre o par citado, qual conclusão mais ampla o texto apresenta e o que falta para sustentá-la. Indique um contraexemplo ou uma condição que os dados de B não cobrem. Por fim, decida <strong>aceitar, aceitar parcialmente ou rejeitar</strong> A e B, justificando cada decisão; proponha outra forma de verificar e diga que informação faria você rever uma decisão.</li>
+<li><strong>Confira as conclusões — 5min.</strong> Verifique se cada afirmação está apoiada em um cálculo ou em um trecho de A/B. Marque como “não informado” qualquer dado de modelo que não foi fornecido.</li>
+<li><strong>Finalize a entrega — 5min.</strong> Inclua nome, origem dos dados e declaração de uso de IA. Envie o registro preenchido pelo canal e no formato informados pelo professor.</li>
 </ol>
-<div class="secao"><h2 id="entrega-e-checklist">Entrega e checklist</h2></div>
+<div class="secao"><h2 id="qual-e-a-evidencia-da-aula-2">Qual é a evidência da aula 2?</h2></div>
+<p>Na análise de A, a evidência é a <strong>tabela preenchida com seus cálculos e a comparação com a resposta fornecida</strong>. Em B, é o <strong>trecho da afirmação que você está avaliando, acompanhado da explicação do que os dados permitem concluir</strong>. Escreva ambos no modelo; não é preciso anexar prints.</p>
+<p>Não repita os pedidos em um chatbot para tentar reproduzir a narrativa de B. As três saídas mencionadas são parte do texto simulado do exercício. Sua tarefa é analisar esse material. Se resolver tudo por escrito, informe “cálculo e leitura das respostas; execução não realizada”.</p>
+<div class="secao"><h2 id="confira-antes-de-entregar">Confira antes de entregar</h2></div>
 <ul>
-<li>[ ] Critérios prévios e tabela dos dois pares de A, com cálculo essencial.</li>
-<li>[ ] Análise de B distinguindo o resultado particular e a alegação geral.</li>
-<li>[ ] Decisão sobre A e B, alternativa de verificação e limite concreto.</li>
-<li>[ ] Origem simulada declarada; nenhuma medida inventada de modelo real.</li>
+<li>[ ] Escrevi os critérios usados para conferir a classificação e a afirmação geral.</li>
+<li>[ ] Preenchi os dois pares de A com soma, esperado por R1, resposta fornecida e conclusão.</li>
+<li>[ ] Em B, separei a análise do par citado da análise da afirmação geral e indiquei um contraexemplo ou condição não coberta.</li>
+<li>[ ] Dei uma decisão justificada para A e para B, propus outra verificação e uma condição para rever a decisão.</li>
+<li>[ ] Identifiquei as respostas como simuladas, declarei eventual IA e mantive o registro em até uma página.</li>
 </ul>
-<p><strong>Critério de conclusão:</strong> outra pessoa consegue refazer os cálculos e identificar qual trecho de cada resposta sustenta sua decisão.</p>
+<div class="secao"><h2 id="como-a-atividade-sera-avaliada">Como a atividade será avaliada</h2></div>
 <div class="tablewrap"><table>
 <thead>
 <tr>
@@ -70,6 +77,5 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>Dica:</strong> verifique tanto a resposta quanto a extensão da afirmação feita a partir dela. Texto é suficiente; não é necessário executar modelo, abrir conta, usar API, Git ou fazer apresentação. Declare eventual uso de IA e não inclua dados reais.</p>
 <footer>24h · Encontros: 25–26/09 e 02–03/10/2026 · Horário de Brasília</footer>
 </main></body></html>

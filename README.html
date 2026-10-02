@@ -17,7 +17,7 @@
 <a href="README.md" download>Arquivo Markdown editável</a>
 </nav>
 </header>
-<p>Este pacote apoia as seis aulas de <strong>Engenharia de Software na Era da IA Generativa (24h)</strong>. Fila Clara é um caso fictício de chamados internos. Alguns exercícios contêm código legado a ser corrigido. As decisões e sua verificação são o foco da disciplina.</p>
+<p>Este pacote apoia as seis aulas de <strong>Engenharia de Software na Era da IA Generativa (24h)</strong>. Fila Clara é um caso fictício de chamados internos. As atividades pedem que você analise situações, confira resultados e justifique decisões. Algumas apresentam código para revisão; os exercícios AV1 podem ser resolvidos por escrito com os dados fornecidos.</p>
 <p>O caso e suas verificações já podem ser executados. O professor conduz as demonstrações; em B3, há também <a href="apoio/execucao-acompanhada-b3.html">25min de execução acompanhada</a> no próprio ambiente, sem entrega ou nota. Cada bloco reserva 35min a um desafio avaliativo individual com consulta; as instruções indicam insumos próprios, entregável e rubrica. Não há entrega coletiva ou síntese adicional obrigatória.</p>
 <div class="secao"><h2 id="preparacao-do-ambiente">Preparação do ambiente</h2></div>
 <p>Obtenha o pacote disponibilizado pelo professor e abra esta pasta. A execução local usa Python e sua biblioteca padrão; o ambiente de preparação foi verificado com <strong>Python 3.13.3</strong>. Não há dependências adicionais. Um assistente de IA no navegador pode apoiar as práticas; não é necessário contratar API. O caminho textual usa os materiais de <code>apoio/</code> quando não houver acesso à ferramenta ou ao ambiente local. A instalação local não é condição para demonstrar os objetivos da disciplina.</p>
@@ -48,14 +48,17 @@
 </tr>
 </tbody>
 </table></div>
-<div class="secao"><h2 id="fluxo-de-trabalho">Fluxo de trabalho</h2></div>
-<p>Desafios AV1: <a href="exercicios/aula-1/README.html">B1 — delegação</a> · <a href="exercicios/aula-2/README.html">B2 — contexto</a> · <a href="exercicios/aula-3/README.html">B3 — ciclo de desenvolvimento</a> · <a href="exercicios/aula-4/README.html">B4 — verificação</a> · <a href="exercicios/aula-5/README.html">B5 — política de uso</a> · <a href="exercicios/aula-6/README.html">B6 — maturidade</a>.</p>
+<div class="secao"><h2 id="comece-pelos-exercicios-da-sua-aula">Comece pelos exercícios da sua aula</h2></div>
+<p>Leia o <a href="exercicios/README.html">guia de preenchimento e entrega</a>. Ele explica qual arquivo preencher, o que é uma evidência e como registrá-la sem precisar executar código ou usar IA.</p>
+<p>Exercícios AV1: <a href="exercicios/aula-1/README.html">aula 1 — delegação</a> · <a href="exercicios/aula-2/README.html">aula 2 — análise de respostas</a> · <a href="exercicios/aula-3/README.html">aula 3 — testes e documentação</a> · <a href="exercicios/aula-4/README.html">aula 4 — revisão de código</a> · <a href="exercicios/aula-5/README.html">aula 5 — uso corporativo</a> · <a href="exercicios/aula-6/README.html">aula 6 — maturidade</a>.</p>
 <ol>
-<li>Leia a atividade da aula e o contrato do caso.</li>
-<li>Registre sua modalidade: execução própria, transcrição verificada ou simulação.</li>
-<li>Inspecione o artefato, registre decisões e execute as verificações quando aplicável.</li>
-<li>Entregue a evidência solicitada no canal informado pelo professor, declarando a assistência utilizada.</li>
+<li>Leia o enunciado (<code>README.md</code>) da aula e os dados indicados nele.</li>
+<li>Faça uma cópia do <code>template-registro.md</code> dessa aula ou copie seu conteúdo para um editor de texto. O HTML é uma versão de leitura, não um formulário.</li>
+<li>Preencha as respostas e as evidências no mesmo documento, com até uma página. Informe se sua análise foi manual ou se houve execução e declare eventual uso de IA.</li>
+<li>Confira o checklist e envie o registro pelo canal e no formato informados pelo professor. Não é necessário enviar commit ou alterar este repositório para entregar.</li>
 </ol>
+<div class="secao"><h2 id="execucao-opcional-do-codigo-do-caso">Execução opcional do código do caso</h2></div>
+<p>O comando abaixo permite explorar o código do caso e suas verificações. Ele não é um requisito para preencher os registros AV1; siga o enunciado da aula para saber o que analisar.</p>
 <p>Execute nesta pasta:</p>
 <pre><code class="language-text">python -B testes/test_fila_clara.py --codigo caso/fila_clara.py
 </code></pre>
