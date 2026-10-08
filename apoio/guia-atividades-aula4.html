@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guia completo de AV1.1, AV1.2, AV1.3 e AV2: dados, passos, exemplos, modelos e critérios. Orientação de 60 minutos na aula 4.">
+<title>Guia das atividades AV1.1, AV1.2, AV1.3 e AV2 · D1.1 · CESAR School</title>
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="guia-atividades-aula4.css">
+<style>:root{--accent:#FF8A3D;--accent-soft:#FFAF78}</style>
+<script src="guia-atividades-aula4.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<main id="conteudo">
+<header class="hero" id="topo">
+<div class="kicker">CESAR School · Engenharia de Software na Era da IA Generativa · D1.1</div>
+<h1>Das instruções à entrega</h1>
+<p class="sub">Guia passo a passo de AV1.1, AV1.2, AV1.3 e AV2</p>
+<p>O que analisar, como construir a evidência, como justificar uma decisão e o que entregar em cada atividade.</p>
+<div class="meta"><span class="pill"><b>Aula 4</b> · primeira hora</span><span class="pill"><b>60 minutos</b> · orientação coletiva</span><span class="pill"><b>Consulta completa</b> · depois da aula</span></div>
+</header>
+<nav class="guia-nav" aria-label="Seções do guia"><a href="#percurso">60 minutos</a><a href="#base">Antes de começar</a><a href="#av11">AV1.1</a><a href="#av12">AV1.2</a><a href="#av13">AV1.3</a><a href="#av2">AV2</a><a href="#rubricas">Rubricas</a><a href="#duvidas">Dúvidas</a><a href="#materiais">Materiais</a></nav>
+<div class="ferramentas"><button type="button" id="expandir">Abrir todos os exemplos e modelos</button><button type="button" id="imprimir">Imprimir / salvar em PDF</button><a href="../README.html">Material da turma</a></div>
+<p id="feedback" role="status" aria-live="polite"></p>
+<noscript><p>Todo o conteúdo e os modelos podem ser lidos sem JavaScript. Abra os detalhes individualmente; para imprimir tudo, expanda-os antes de usar a impressão do navegador.</p></noscript>
+<div class="secao"><h2 id="percurso">Nosso percurso de 60 minutos</h2></div>
+<p>Esta primeira hora da aula 4 é dedicada a entender <strong>o que cada atividade pede, como construir uma resposta e como conferir a entrega</strong>. Depois, esta página continua disponível como guia de consulta. Aqui, “atividade 1.1”, “1.2”, “1.3” e “2” correspondem a <strong>AV1.1, AV1.2, AV1.3 e AV2</strong>.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Minutos da orientação</th>
+<th>Horário se iniciarmos às 19h</th>
+<th>Foco</th>
+<th>Ao terminar este trecho…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00–05 · 5min</td>
+<td>19h00–19h05</td>
+<td>Contrato, evidência e entregáveis</td>
+<td>Sei onde escrever e de onde tirar o resultado esperado.</td>
+</tr>
+<tr>
+<td>05–17 · 12min</td>
+<td>19h05–19h17</td>
+<td>AV1.1: decidir a delegação</td>
+<td>Sei preencher os três cartões e detalhar uma evidência.</td>
+</tr>
+<tr>
+<td>17–29 · 12min</td>
+<td>19h17–19h29</td>
+<td>AV1.2: verificar respostas</td>
+<td>Sei separar cálculo, afirmação e alcance da conclusão.</td>
+</tr>
+<tr>
+<td>29–41 · 12min</td>
+<td>19h29–19h41</td>
+<td>AV1.3: casos e documentação</td>
+<td>Sei descrever três casos, conferir a ordem e redigir o texto.</td>
+</tr>
+<tr>
+<td>41–56 · 15min</td>
+<td>19h41–19h56</td>
+<td>AV2: estudo técnico</td>
+<td>Sei montar a matriz, rastrear resultados e comparar uma alternativa.</td>
+</tr>
+<tr>
+<td>56–60 · 4min</td>
+<td>19h56–20h00</td>
+<td>Revisão e dúvidas</td>
+<td>Sei o que entregar e o que preciso completar.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Como acompanhar:</strong> nos trechos de cada atividade, vamos percorrer o objetivo, os dados e os passos; os exemplos e modelos expansíveis ficam para consulta e dúvidas. Os minutos acima são de <strong>orientação coletiva</strong>, não um novo tempo de resolução de todas as avaliações. Os esforços previstos nos enunciados continuam sendo 35min por desafio AV1 e 120min para AV2.</p>
+<blockquote>
+<p><strong>Prazos e envio.</strong> Os materiais registram AV1.1 em 25/09, AV1.2 e AV1.3 em 26/09 e prazo <strong>proposto</strong> da AV2 em <strong>30/09/2026, às 23h59, Brasília</strong>. Esta orientação de 02/10 não define reabertura, prorrogação ou novo prazo. Qualquer atualização, canal e formato de envio serão comunicados pelo professor. Consulte o <a href="../avaliacao.html">documento de avaliação</a>.</p>
+</blockquote>
+<div class="secao"><h2 id="base">Antes de começar: o que vale para as quatro atividades</h2></div>
+<h3>O produto que esperamos</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Atividade</th>
+<th>Trabalho central</th>
+<th>Entrega individual</th>
+<th>O que conta como evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AV1.1</td>
+<td>Decidir como realizar três pedidos</td>
+<td>Um registro de até <strong>1 página</strong>, com tabela C1–C3 e campos finais</td>
+<td>Uma entrada/saída explicada ou informação faltante relevante para a decisão; critérios nos três cartões.</td>
+</tr>
+<tr>
+<td>AV1.2</td>
+<td>Conferir A e avaliar a alegação de B</td>
+<td>Um registro de até <strong>1 página</strong></td>
+<td>Cálculos e comparação dos dois pares de A; trecho de B e análise de seu alcance.</td>
+</tr>
+<tr>
+<td>AV1.3</td>
+<td>Escrever casos de R2 e documentação R4</td>
+<td>Um registro de até <strong>1 página</strong></td>
+<td>Três casos escritos, saída combinada e explicação da ordem; documentação coerente.</td>
+</tr>
+<tr>
+<td>AV2</td>
+<td>Avaliar código e documentação por R3/R4</td>
+<td>Até <strong>2 páginas de análise + até 2 de anexo técnico</strong></td>
+<td>Matriz de no mínimo quatro casos, trechos localizados, método, comparação e revalidação de eventual ajuste.</td>
+</tr>
+</tbody>
+</table></div>
+<p>As evidências fazem parte da resposta. Nas AV1, elas entram na própria página; na AV2, a análise aponta para a matriz e os trechos do anexo. <strong>Não há uma entrega extra de prints ou uma apresentação obrigatória.</strong></p>
+<h3>O caso Fila Clara em linguagem simples</h3>
+<p>Fila Clara é uma organização fictícia que acompanha chamados de <strong>Oficina</strong> e <strong>Laboratório</strong>. Um chamado é um registro com <code>id</code>, <code>departamento</code>, <code>estado</code>, <code>impacto</code> e <code>urgencia</code>. Os estados possíveis são <code>aberto</code>, <code>em_andamento</code> e <code>fechado</code>; impacto e urgência são inteiros de 1 a 3. Todas as entradas fornecidas são válidas e fictícias.</p>
+<p>O <strong>contrato</strong> é a regra de referência que foi aprovada. Para conferir uma proposta, primeiro determinamos o que esse contrato exige; só depois comparamos com a resposta, o código ou o texto candidato.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>O que exige</th>
+<th>Onde será usada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1 · prioridade</strong></td>
+<td>Somar impacto e urgência. Soma ≥ 5: <code>alta</code>. Soma de 3 a 4: <code>media</code>. Soma &lt; 3: <code>baixa</code>. A saída <code>media</code> é escrita sem acento.</td>
+<td>AV1.2.</td>
+</tr>
+<tr>
+<td><strong>R2 · listagem de ativos</strong></td>
+<td>Incluir <code>aberto</code> e <code>em_andamento</code>; excluir <code>fechado</code>; preservar a ordem de entrada.</td>
+<td>AV1.1 e AV1.3.</td>
+</tr>
+<tr>
+<td><strong>R3 · visibilidade</strong></td>
+<td>Permitir que a pessoa visualize somente chamados do próprio departamento, independentemente de estado ou prioridade.</td>
+<td>AV1.1 e AV2.</td>
+</tr>
+<tr>
+<td><strong>R4 · documentação</strong></td>
+<td>Descrever o mesmo comportamento do contrato; confrontar código, testes e texto com essa referência.</td>
+<td>AV1.3 e AV2.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Atenção à diferença entre R2 e R3:</strong> listar chamados ativos e decidir quem pode visualizar um chamado são tarefas diferentes. A condição de uma regra não passa automaticamente para a outra. Leia o requisito indicado na atividade antes de definir o esperado. <a href="../caso/regras.html">Contrato completo</a>.</p>
+<h3>Cinco palavras que precisam ficar claras</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Significado no seu registro</th>
+<th>Como escrever</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critério de aceite</td>
+<td>Condição que o resultado deve cumprir para ser aprovado</td>
+<td>“Vou comparar ___ com a obrigação ___ do contrato.”</td>
+</tr>
+<tr>
+<td>Resultado esperado</td>
+<td>O que a regra exige para uma entrada, calculado antes de avaliar a proposta</td>
+<td>“Por R__, para a entrada <strong><em>, espero </em></strong>.”</td>
+</tr>
+<tr>
+<td>Resultado inferido</td>
+<td>O que concluo lendo o código, sem rodá-lo</td>
+<td>“Por inspeção, a expressão retorna ___ porque ___.”</td>
+</tr>
+<tr>
+<td>Resultado observado</td>
+<td>O que uma execução efetivamente produziu</td>
+<td>“Executei ___ com a entrada ___ e obtive ___.”</td>
+</tr>
+<tr>
+<td>Evidência rastreável</td>
+<td>Registro que outra pessoa consegue localizar e conferir</td>
+<td>“A linha T__ usa o registro <strong><em>; comparei o esperado ___ com o retorno </em></strong>.”</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uma <strong>simulação didática</strong> é um texto criado para análise. Uma <strong>transcrição</strong> registra uma execução feita por alguém. Uma <strong>proposta de teste</strong> descreve o que se pretende verificar. Identifique qual desses materiais está usando: planejar, inspecionar e executar são ações distintas.</p>
+<h3>Como preparar o documento de resposta</h3>
+<ol>
+<li>Abra o modelo correspondente nos botões de cada atividade. É possível baixar o <code>.md</code>, copiar o texto ou usar um editor de sua preferência.</li>
+<li>Preencha nome e data. Substitua os espaços em branco por respostas próprias e retire as instruções de preenchimento da versão final.</li>
+<li>Escreva critérios, evidências, decisão e limites no mesmo registro, respeitando o número de páginas.</li>
+<li>Confira a rubrica e o checklist. Envie no canal e formato informados pelo professor. Esta página é um guia de leitura; ela <strong>não recebe nem envia sua avaliação</strong>.</li>
+</ol>
+<p>Não é necessário instalar Python, criar conta em IA, pagar ferramenta, usar API, fazer commit, editar o repositório ou realizar pesquisa externa. A análise manual documentada atende aos objetivos. Na AV2, executar o candidato é uma opção com a <strong>mesma rubrica</strong> da inspeção.</p>
+<h3>Se houver uso de IA</h3>
+<p>O uso é permitido com declaração e verificação próprias. Informe ferramenta/modelo visível, tarefa e contexto fornecidos, trecho aproveitado e o que você verificou ou modificou. Use <strong>“não informado”</strong> para metadados indisponíveis. Se não usou, escreva <strong>“IA não utilizada na elaboração deste registro”</strong>.</p>
+<p>Admitir IA numa etapa hipotética do caso não significa que você tenha usado IA para redigir sua resposta. São dois registros diferentes. A origem simulada das respostas de um enunciado também não é uma declaração de uso pessoal de IA.</p>
+<div class="secao"><h2 id="av11">AV1.1 · Decidir o que delegar</h2></div>
+<div class="resumo"><strong>12min na orientação · 35min de esforço previsto · até 1 página.</strong><br>Ao final: três decisões justificadas, uma evidência detalhada e uma alternativa comparada.</div>
+
+<h3>1. Entenda o trabalho solicitado</h3>
+<p>Você está analisando <strong>como uma equipe deve realizar cada pedido</strong>. Sua entrega é a decisão sobre a forma de trabalhar e de conferir o resultado. Não é necessário implementar os pedidos dos cartões, gerar critérios completos com uma IA ou criar um teste executável.</p>
+<h3>2. Leia os três cartões completos</h3>
+<p>Use R2 e R3 do quadro de regras. Os cartões são fictícios.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Cartão</th>
+<th>Pedido e informações disponíveis</th>
+<th>Resultado solicitado à equipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C1</strong></td>
+<td>A pessoa responsável pela manutenção quer critérios de aceite para R2. O contrato está aprovado; as entradas são fictícias e válidas.</td>
+<td>Rascunho de critérios que outra pessoa consiga verificar.</td>
+</tr>
+<tr>
+<td><strong>C2</strong></td>
+<td>A equipe quer um teste de R3. Há dois departamentos, Oficina e Laboratório, e os estados aberto, em_andamento e fechado.</td>
+<td>Proposta de entrada, saída esperada e justificativa do teste.</td>
+</tr>
+<tr>
+<td><strong>C3</strong></td>
+<td>A operação pede autorização urgente para implantar uma alteração de visibilidade. Há apenas o resumo “facilitar acesso entre áreas”; a regra nova, os dados afetados, as verificações e o responsável pela aprovação não foram confirmados.</td>
+<td>Decisão sobre autorizar a mudança em produção nas condições atuais.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Observe o <strong>tipo de resultado</strong> de cada cartão: um rascunho, uma proposta de teste ou uma autorização. Observe também quais informações existem e quais ainda faltam. Essas diferenças precisam aparecer na justificativa.</p>
+<h3>3. Preencha as cinco colunas para cada cartão</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Campo do modelo</th>
+<th>O que escrever</th>
+<th>Pergunta para conferir sua resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Como faria sem IA / entrada e resultado</td>
+<td>A ação humana de partida, o material consultado e o produto gerado</td>
+<td>Uma pessoa entenderia por onde começar e o que produzir?</td>
+</tr>
+<tr>
+<td>Modalidade e justificativa</td>
+<td>Uma escolha e um motivo ligado às condições daquele cartão</td>
+<td>Minha justificativa menciona algo específico de C1, C2 ou C3?</td>
+</tr>
+<tr>
+<td>O que conferir para aprovar</td>
+<td>Um critério concreto de comparação com o contrato ou com as informações necessárias</td>
+<td>Eu conseguiria identificar se esse critério foi atendido?</td>
+</tr>
+<tr>
+<td>Responsável humano</td>
+<td>A função que revisa ou autoriza o resultado</td>
+<td>Está claro quem responde pela aprovação final?</td>
+</tr>
+</tbody>
+</table></div>
+<p>A coluna “Cartão” já identifica C1, C2 e C3; preencha as demais para <strong>os três</strong>. “Revisar com cuidado” ou “um humano valida” ainda não dizem <strong>o que</strong> deve ser conferido nem <strong>quem</strong> assume a decisão.</p>
+<p><strong>As modalidades disponíveis são:</strong></p>
+<ul>
+<li><strong>Sem IA:</strong> uma pessoa realiza a tarefa pelo processo que você descreveu.</li>
+<li><strong>Com assistência:</strong> a IA apoia uma parte delimitada; você nomeia essa parte e a revisão humana necessária.</li>
+<li><strong>Sem delegar a decisão:</strong> a aprovação final permanece com uma pessoa responsável. Se admitir assistência preparatória, diga exatamente em qual tarefa e onde ela termina.</li>
+</ul>
+<p>Você pode repetir modalidades. Não é obrigatório usar uma diferente em cada cartão. Indique um papel profissional adequado para a responsabilidade, sem inventar nomes ou afirmar que uma aprovação já ocorreu.</p>
+<h3>4. Escolha um cartão e detalhe uma evidência</h3>
+<p>No campo <strong>“Exemplo que sustenta minha decisão”</strong>, escolha C1, C2 ou C3 e use uma destas formas:</p>
+<p><strong>Forma A — entrada e saída esperada:</strong> escreva uma entrada fictícia válida, determine a saída pela regra correspondente e explique como essa comparação sustenta a verificação que você propôs. Indique se é apenas um caso planejado.</p>
+<p><strong>Forma B — informação necessária:</strong> localize no cartão uma informação ausente, explique por que ela afeta a decisão e descreva como seria obtida ou conferida antes da aprovação. Não a trate como informação já recebida.</p>
+<p>O trecho explicado é a evidência. Basta <strong>um cartão detalhado</strong>; nos outros dois, mantenha os critérios concretos da tabela. Não há arquivo de evidência separado.</p>
+<details>
+<summary>Exemplo de formato · outra tarefa, sem resolver C1–C3</summary>
+<p>Considere uma tarefa diferente: <strong>rascunhar um critério de prioridade de R1</strong>.</p>
+<blockquote>
+<p>“Uma pessoa partiria de R1 e escreveria o critério. Eu admitiria assistência para redigir uma primeira versão; a manutenção compararia o texto com a soma e com os limites da regra. Como exemplo de conferência: impacto 1 + urgência 2 = 3; espero <code>media</code> por R1. Esse caso ajuda a verificar se o rascunho considera os dois campos. É uma verificação planejada; não executei código. Fazer o rascunho sem IA reduz a necessidade de revisar uma proposta externa, mas mantém o esforço humano de redação. Eu reveria a assistência se ela não trouxesse utilidade para essa tarefa curta ou se os critérios produzidos omitissem a regra.”</p>
+</blockquote>
+<p>Observe a estrutura: tarefa delimitada → revisão concreta → exemplo ligado à regra → comparação → condição de revisão. A comparação de esforço acima é qualitativa; não afirma um ganho de tempo medido. Na sua resposta, use um dos cartões e a regra que o governa.</p>
+</details>
+<h3>5. Compare uma alternativa e defina o limite</h3>
+<p>Escolha um cartão — pode ser o mesmo da evidência — e compare sua modalidade com outra opção viável. Explique <strong>uma diferença de esforço, risco ou responsabilidade</strong>, considerando os mesmos dados do cartão.</p>
+<p>Use este esqueleto: “Escolhi ___ porque <strong><em>. A alternativa ___ mudaria </em></strong>; diante da restrição <strong><em>, isso teria a consequência </em></strong>. A delegação termina em ___. Eu reveria a escolha se ___ fosse verificado.” Complete com fatos do caso; não deixe os espaços como frases genéricas.</p>
+<p>“Se a IA melhorar” é amplo demais. Uma condição útil informa qual evidência, informação ou mudança de contexto faria sua decisão mudar. Se faltam dados, registre a falta e seu efeito; não presuma a resposta.</p>
+<h3>6. Revise o que vai entregar</h3>
+<ul>
+<li>C1, C2 e C3 têm processo sem IA, modalidade justificada, conferência e responsável.</li>
+<li>Um cartão tem evidência explicada no campo próprio.</li>
+<li>Um cartão tem alternativa comparada, limite da delegação e condição de revisão.</li>
+<li>A origem fictícia e o eventual uso pessoal de IA estão declarados.</li>
+<li>Tudo cabe em uma página, incluindo a evidência essencial.</li>
+</ul>
+<p><strong>Na orientação, vamos conferir:</strong> consigo apontar, na minha justificativa, a informação do cartão que sustenta minha escolha?</p>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-1/README.html">Enunciado de AV1.1</a>
+<a class="button-link" href="../exercicios/aula-1/template-registro.md" download>Baixar modelo editável · AV1.1</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.1</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av11">Copiar campos do modelo</button>
+<pre id="modelo-av11" class="modelo" tabindex="0"><code># Registro individual — AV1.1
+
+
+**Limite: uma página, incluindo evidências essenciais.** Estudante: ___ — Data: ___
+Origem: cartões C1–C3 fictícios do enunciado.
+
+| Cartão | Como faria sem IA / entrada e resultado | Modalidade e justificativa ligada ao cartão | O que conferir para aprovar | Responsável humano |
+|---|---|---|---|---|
+| C1 | | | | |
+| C2 | | | | |
+| C3 | | | | |
+
+**Exemplo que sustenta minha decisão (escolha C1, C2 ou C3; escreva entrada e saída esperada OU informação que falta, e explique a relação com sua decisão):** ___
+
+**Alternativa para o cartão ___:** ___
+**Comparação com minha escolha (restrição e consequência):** ___
+**Limite da delegação e condição para rever a escolha:** ___
+
+**Uso de IA na elaboração deste registro:** não utilizada / ferramenta e modelo visíveis: ___; tarefa delegada e contexto: ___; trecho aproveitado: ___; minha verificação/intervenção: ___. Use “não informado” para metadados indisponíveis. O raciocínio e a decisão registrados são meus.
+
+**Revisão:** [ ] três decisões; [ ] exemplo explicado; [ ] alternativa e limite; [ ] até uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av12">AV1.2 · Verificar respostas e o alcance de uma alegação</h2></div>
+<div class="resumo"><strong>12min na orientação · 35min de esforço previsto · até 1 página.</strong><br>Ao final: tabela de A, análise de B, duas decisões e uma proposta de verificação.</div>
+
+<h3>1. Tenha o contrato R1 ao lado das respostas</h3>
+<p>Para entradas válidas, calcule <strong>impacto + urgência</strong> e aplique as faixas: ≥ 5 → <code>alta</code>; 3 a 4 → <code>media</code>; &lt; 3 → <code>baixa</code>. A referência é R1. A resposta recebida é o objeto que você vai conferir.</p>
+<p>As duas respostas abaixo foram <strong>escritas como simulações didáticas</strong>. Não são saídas observadas de um modelo real. Tokens, custo, latência, configuração e versão do modelo não foram informados.</p>
+<blockquote>
+<p><strong>Resposta A — simulada:</strong> “Para priorizar, basta considerar impacto: 1 corresponde a baixa, 2 a media e 3 a alta. Portanto, (impacto=2, urgencia=3) é media e (impacto=3, urgencia=1) é alta.”</p>
+<p><strong>Resposta B — simulada:</strong> “Repeti três vezes o pedido ‘classifique impacto=2, urgencia=3’. As três saídas foram ‘alta’. Isso prova que o modelo é determinístico e sempre entrega a classificação correta, inclusive em outros chamados.”</p>
+</blockquote>
+<h3>2. Escreva seus critérios antes da análise</h3>
+<p>O modelo abre com dois critérios. No primeiro, descreva como você verifica uma classificação com R1. No segundo, explicite que tipo de evidência seria necessário para sustentar uma afirmação sobre repetições e outras entradas. Isso evita aceitar uma conclusão somente porque o texto parece seguro.</p>
+<p><strong>Correção</strong> pergunta se uma resposta atende ao contrato. <strong>Repetibilidade</strong> pergunta se o resultado se repete sob condições definidas. <strong>Determinismo</strong>, no sentido usado na alegação, envolve produzir a mesma saída para a mesma entrada sob condições fixadas. Não use esses termos como sinônimos: uma saída repetida precisa ser confrontada com a regra, e a abrangência de uma alegação precisa ser compatível com a evidência disponível.</p>
+<h3>3. Preencha as duas linhas de A</h3>
+<p>Para cada par solicitado, faça quatro ações: <strong>somar → classificar por R1 → localizar o que A afirma → comparar</strong>.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Entrada obrigatória</th>
+<th>Cálculo e esperado por R1</th>
+<th>Trecho exato de A</th>
+<th>Conclusão por inspeção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(2, 3)</code></td>
+<td>Escreva a soma e aplique a faixa correspondente.</td>
+<td>Copie a classificação que A atribui a esse par.</td>
+<td>Explique se coincide e qual regra sustenta a comparação.</td>
+</tr>
+<tr>
+<td><code>(3, 1)</code></td>
+<td>Faça um cálculo independente para este par.</td>
+<td>Copie o trecho referente a este par.</td>
+<td>Registre a comparação deste caso, mesmo que sua conclusão se pareça com a anterior.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Preencha o <strong>cálculo</strong>, não apenas o nome da classificação. O leitor deve conseguir seguir o caminho entre a entrada e sua conclusão. Essa tabela é a evidência de A; não é necessário obter uma resposta nova com IA.</p>
+<details>
+<summary>Exemplo de preenchimento · um par diferente dos avaliados</summary>
+<p>Considere a entrada <code>(1, 2)</code> e uma resposta fictícia adicional que a chamou de <code>baixa</code>.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Entrada</th>
+<th>Cálculo e esperado</th>
+<th>Resposta a conferir</th>
+<th>Conclusão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(1, 2)</code></td>
+<td>1 + 2 = 3; R1 determina <code>media</code>.</td>
+<td>“A classificação é baixa.”</td>
+<td>O trecho diverge de R1 para esta entrada. Conclusão por cálculo manual; não houve execução.</td>
+</tr>
+</tbody>
+</table></div>
+<p>A linha mostra critério, esperado, encontrado e comparação. Faça esse mesmo percurso com os dois pares pedidos no enunciado; o exemplo acima não substitui nenhuma das duas linhas.</p>
+</details>
+<h3>4. Analise B em quatro campos distintos</h3>
+<ol>
+<li><strong>Trecho analisado:</strong> localize a frase que contém a conclusão que você está avaliando. Cite somente o necessário.</li>
+<li><strong>Par citado:</strong> confronte a classificação apresentada para aquele par com R1. Esta é uma afirmação sobre uma entrada determinada.</li>
+<li><strong>Afirmação geral:</strong> identifique até onde o texto amplia a conclusão: repetições, determinismo e correção em outros chamados. Compare esse alcance com o que a narrativa efetivamente fornece.</li>
+<li><strong>Contraexemplo ou condição não coberta:</strong> apresente uma situação pertinente que a evidência não examinou, explicando como ela ajudaria a avaliar a alegação. Se for uma hipótese ou teste futuro, identifique assim.</li>
+</ol>
+<p>Você pode usar <strong>uma condição não coberta</strong>; não precisa inventar uma falha real de um modelo. Não transforme as três saídas narradas em três execuções feitas por você. Também não é necessário repetir o pedido num chatbot para tentar reproduzir B.</p>
+<details>
+<summary>Como escrever sobre uma alegação sem inventar observações</summary>
+<p>Exemplo em outro contexto: “Um conversor de unidades acertou três vezes a conversão de 1 metro; portanto, todas as conversões e unidades estão corretas.”</p>
+<p>Um registro de limite pode dizer: “A narrativa trata de uma entrada e de uma unidade. Eu proporia conferir outra unidade e um valor distinto, com resultado esperado calculado pela regra de conversão. Essa verificação ainda não foi executada.” O texto localiza o alcance da evidência e propõe um próximo passo, sem afirmar um erro que não foi observado.</p>
+<p>Na AV1.2, a análise precisa se referir às palavras e às entradas de B. O exemplo do conversor serve apenas para mostrar como distinguir fato narrado, inferência e proposta.</p>
+</details>
+<h3>5. Dê uma decisão para A e outra para B</h3>
+<p>Escolha <strong>aceitar, aceitar parcialmente ou rejeitar</strong> para cada resposta e fundamente no que você registrou. Se aceitar parcialmente, diga <strong>qual parte</strong> pode ser aproveitada e <strong>qual parte</strong> não está sustentada. Nomear a categoria sem explicar seu alcance deixa a decisão incompleta.</p>
+<p>Em seguida, proponha outra forma de verificar e a informação que faria você rever uma decisão. Descreva entradas ou condições, referência para o esperado e comparação pretendida. Não atribua resultado a um teste que só foi proposto.</p>
+<h3>6. Revise o que vai entregar</h3>
+<ul>
+<li>Critério de classificação e critério de sustentação da afirmação geral escritos.</li>
+<li>Dois pares de A com cálculo, esperado, trecho e comparação.</li>
+<li>B com trecho, análise do par, alcance da alegação e contraexemplo ou condição não coberta.</li>
+<li>Decisões separadas sobre A e B, alternativa de verificação e condição de revisão.</li>
+<li>Origem simulada, método próprio, metadados indisponíveis e uso pessoal de IA declarados; até uma página.</li>
+</ul>
+<p>Se trabalhou apenas com os textos e os cálculos, pode registrar: <strong>“Cálculo e leitura das respostas simuladas; execução não realizada. Tokens, custo, latência e configuração: não informados.”</strong></p>
+<p><strong>Na orientação, vamos conferir:</strong> consigo distinguir “essa classificação” de “todas as classificações futuras” na minha análise?</p>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-2/README.html">Enunciado de AV1.2</a>
+<a class="button-link" href="../exercicios/aula-2/template-registro.md" download>Baixar modelo editável · AV1.2</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.2</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av12">Copiar campos do modelo</button>
+<pre id="modelo-av12" class="modelo" tabindex="0"><code># Registro individual — AV1.2
+
+
+**Limite: uma página.** Estudante: ___ — Data: ___
+**Critérios antes da análise:** como conferir a classificação por R1: ___; o que seria necessário para sustentar uma afirmação sobre outras entradas ou repetições: ___.
+
+| Entrada de A (impacto, urgência) | Cálculo e esperado por R1 | Trecho da resposta A | Conclusão por inspeção |
+|---|---|---|---|
+| (2, 3) | | | |
+| (3, 1) | | | |
+
+**B — trecho analisado:** ___
+**O que posso concluir sobre o par citado em B:** ___
+**Afirmação geral de B: o que falta para sustentá-la:** ___
+**Contraexemplo ou condição não coberta:** ___
+
+**Decisão A + motivo:** ___
+**Decisão B + motivo:** ___
+**Alternativa de verificação e condição que mudaria uma decisão:** ___
+
+**Origem dos dados e como fiz a análise:** respostas didáticas simuladas; cálculos/inspeções próprios: ___; execução real: não realizada. Tokens/custo/latência/configuração: não informados.
+**IA na produção do registro:** não utilizada / ferramenta-modelo visível: ___; tarefa/contexto: ___; trecho aproveitado e verificação própria: ___.
+
+**Revisão:** [ ] critérios; [ ] dois pares; [ ] análise de B; [ ] decisões/limites; [ ] uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av13">AV1.3 · Ligar requisito, verificação e documentação</h2></div>
+<div class="resumo"><strong>12min na orientação · 35min de esforço previsto · até 1 página.</strong><br>Ao final: três casos escritos, saída combinada, ordem explicada, documentação e decisão de assistência.</div>
+
+<h3>1. Transforme R2 em obrigações verificáveis</h3>
+<p>R2 tem quatro obrigações: <strong>incluir <code>aberto</code>; incluir <code>em_andamento</code>; excluir <code>fechado</code>; preservar a ordem de entrada</strong>. R4 exige que a documentação descreva esse comportamento. Escreva essas obrigações no primeiro campo do modelo, com suas palavras e sem criar critérios adicionais.</p>
+<p>Os registros fornecidos são:</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Posição na entrada</th>
+<th>id</th>
+<th>departamento</th>
+<th>estado</th>
+<th>impacto</th>
+<th>urgencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TR-31</td>
+<td>Oficina</td>
+<td>em_andamento</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TR-32</td>
+<td>Laboratório</td>
+<td>fechado</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TR-33</td>
+<td>Oficina</td>
+<td>aberto</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Preservar a ordem” significa manter a <strong>ordem relativa dos registros que permanecem</strong>, mesmo quando outro registro é removido. Um item pode passar da terceira para a segunda posição por causa de uma exclusão; o que se confere é a sequência relativa entre os itens mantidos.</p>
+<h3>2. Escreva um caso para cada estado</h3>
+<p>O modelo tem três linhas: <code>aberto</code>, <code>em_andamento</code> e <code>fechado</code>. Você pode usar os registros sozinhos ou combinados. Em cada linha, informe:</p>
+<ol>
+<li><strong>Entrada:</strong> os IDs escolhidos, na ordem em que seriam entregues à listagem. Os campos desses IDs são os da tabela acima.</li>
+<li><strong>Saída esperada:</strong> os IDs que R2 exige, já na ordem correta. Se não restar nenhum, escreva <code>[]</code>; não deixe o campo vazio.</li>
+<li><strong>Obrigação de R2:</strong> diga qual parte da regra aquele caso verifica.</li>
+<li><strong>Conferência:</strong> descreva a comparação que permitiria julgar o resultado de uma implementação.</li>
+</ol>
+<p>Um caso escrito pode usar o formato: <strong>“Entrada: [IDs em ordem]; esperado: [IDs em ordem]; obrigação: <strong><em>; conferência: </em></strong>.”</strong> Não é necessário transformar esse texto em código.</p>
+<h3>3. Considere a entrada combinada e explique a ordem</h3>
+<p>Agora use <strong>TR-31, TR-32, TR-33</strong>, nessa sequência. Determine quais registros permanecem segundo R2 e escreva a saída esperada como uma lista ordenada. Depois explique qual registro deve aparecer antes de qual outro e por quê.</p>
+<p>Verificar somente “os IDs pertencem à saída” não cobre a ordem. Compare a <strong>sequência</strong>, considerando a posição relativa dos registros mantidos. Não introduza ordenação por prioridade, departamento ou ID: volte ao que R2 exige.</p>
+<details>
+<summary>Exemplo de ordem relativa · outra regra e outros dados</summary>
+<p>Suponha uma regra auxiliar de lista de compras: “remover itens já comprados e preservar a ordem dos restantes”. Entrada: <code>[arroz pendente, leite comprado, café pendente]</code>. Esperado: <code>[arroz, café]</code>.</p>
+<p>O arroz vinha antes do café e continua antes. A lista <code>[café, arroz]</code> teria os mesmos itens, mas outra ordem. O café passou da terceira para a segunda posição porque o leite saiu; isso não viola a ordem relativa.</p>
+<p>Use esse modo de comparar na entrada TR-31, TR-32, TR-33, aplicando R2. A saída dos chamados deve ser calculada por você.</p>
+</details>
+<h3>4. Redija a documentação em até três frases</h3>
+<p>Explique o comportamento para uma pessoa que precisa usar a listagem. O texto deve permitir entender quais estados são incluídos, qual é excluído e como a ordem é tratada. Você pode reunir mais de uma obrigação na mesma frase.</p>
+<p>Depois confira cada afirmação contra R2. Se o texto acrescentar uma filtragem ou uma ordenação não prevista, ele deixa de descrever o contrato. Se omitir uma obrigação, o leitor perde informação necessária. <strong>R4 exige coerência com a regra</strong>, não apenas uma redação agradável.</p>
+<h3>5. Indique onde admitiria assistência e como aprovaria o resultado</h3>
+<p>Escolha uma etapa delimitada, como rascunhar casos ou revisar a redação. Escreva a tarefa que a IA faria, a pessoa ou função responsável por conferir, e a comparação concreta que essa pessoa faria antes de aprovar.</p>
+<p>Compare com realizar essa mesma etapa sem IA. Explique uma diferença pertinente de esforço, possibilidade de erro ou necessidade de revisão. Aponte algo que seus casos ainda não verificam e diga como isso limita a aprovação ou que nova verificação a faria mudar.</p>
+<p>Não basta “usaria IA e conferiria depois”: o leitor precisa saber <strong>etapa, tarefa, responsável, critério, alternativa e limite</strong>. Também não presuma que três casos demonstram toda a correção de qualquer implementação.</p>
+<h3>6. Identifique o status das evidências e finalize</h3>
+<p>Se você apenas calculou as saídas pela regra, registre <strong>“Saídas esperadas calculadas por R2; execução não realizada”</strong>. Uma tabela de casos planejados é válida para esta atividade. Não a descreva como resultado observado de um programa.</p>
+<p>A prática de execução acompanhada da aula 3 é separada, sem entrega ou nota. Ela não substitui o registro individual de AV1.3, e não é necessário anexar a prática para concluir esta atividade.</p>
+<ul>
+<li>Três casos escritos, um por estado, com entrada, esperado, obrigação e conferência.</li>
+<li>Entrada combinada com saída esperada e explicação da ordem relativa.</li>
+<li>Documentação de até três frases coerente com R2/R4.</li>
+<li>Etapa assistida, tarefa, responsável, verificação e comparação com fazer sem IA.</li>
+<li>Limite, condição de revisão, origem, método e declaração de IA; até uma página.</li>
+</ul>
+<p><strong>Na orientação, vamos conferir:</strong> minha tabela e minha documentação descrevem a mesma regra? Onde aparece a evidência da ordem?</p>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-3/README.html">Enunciado de AV1.3</a>
+<a class="button-link" href="../exercicios/aula-3/template-registro.md" download>Baixar modelo editável · AV1.3</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.3</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av13">Copiar campos do modelo</button>
+<pre id="modelo-av13" class="modelo" tabindex="0"><code># Registro individual — AV1.3
+
+
+**Limite: uma página.** Estudante: ___ — Data: ___
+**O que a listagem e a documentação precisam cumprir, conforme R2/R4:** ___
+
+| Caso / estado a verificar | Entrada (IDs e ordem) | IDs esperados na ordem | Obrigação de R2 e como verificar |
+|---|---|---|---|
+| 1 / aberto | | | |
+| 2 / em_andamento | | | |
+| 3 / fechado | | | |
+
+**Entrada combinada TR-31, TR-32, TR-33 → IDs esperados:** ___
+**Como conferiria a ordem (compare a posição dos IDs na entrada e na saída esperada):** ___
+**Documentação proposta (até três frases):** ___
+
+**Etapa em que admitiria IA / tarefa que ela faria / pessoa responsável por conferir:** ___
+**O que essa pessoa deve verificar antes de aprovar:** ___
+**Alternativa sem IA e comparação:** ___
+**O que os casos não verificam e o que me faria rever a aprovação:** ___
+
+**Origem dos dados e como fiz a análise:** entrada fictícia do enunciado; esperado por contrato: ___; inspeção própria: ___; execução opcional (comando/resultado, se houver): ___ / não realizada.
+**Uso de IA neste registro:** não utilizada / ferramenta-modelo visível: ___; contexto/tarefa: ___; trecho aproveitado e minha verificação: ___.
+
+**Revisão:** [ ] três estados; [ ] ordem; [ ] texto; [ ] aceite/limite; [ ] uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av2">AV2 · Estudo técnico de verificação</h2></div>
+<div class="resumo"><strong>15min na orientação · 120min autônomos previstos · 30% da nota final.</strong><br>Até 2 páginas de análise + até 2 páginas de anexo técnico. Inspeção e execução opcional usam a mesma rubrica.</div>
+
+<h3>1. Entenda o objeto da avaliação e o escopo</h3>
+<p>Você recebeu <strong>uma proposta isolada de função e uma documentação candidata</strong>. Seu trabalho é verificar ambas por R3/R4, registrar evidências e decidir o encaminhamento comparando uma alternativa. A proposta não substitui as funções do kit e não é o mesmo código da demonstração docente.</p>
+<p><strong>R3:</strong> a pessoa pode visualizar somente chamados do próprio departamento, independentemente de estado ou prioridade. <strong>R4:</strong> a documentação deve descrever o contrato; código, verificação e texto precisam ser confrontados com ele.</p>
+<p>As entradas são válidas: departamentos Oficina e Laboratório; estados <code>aberto</code>, <code>em_andamento</code>, <code>fechado</code>; impacto e urgência inteiros de 1 a 3. Não acrescente autenticação real, API, persistência, dados pessoais ou validação de entradas externas ao que será exigido. O estudo é sobre esta regra didática.</p>
+<h3>2. Tenha todos os insumos disponíveis</h3>
+<p><strong>Candidato de código — artefato didático fictício:</strong></p>
+<pre><code class="language-python">def pode_visualizar_proposta(chamado, departamento):
+    return (
+        chamado[&quot;departamento&quot;] == departamento
+        and chamado[&quot;estado&quot;] != &quot;fechado&quot;
+    )
+</code></pre>
+<p><strong>Documentação candidata — texto fictício:</strong></p>
+<blockquote>
+<p>A função permite que uma pessoa visualize chamados ativos de seu próprio departamento. Chamados abertos ou em andamento ficam disponíveis para o departamento correspondente; chamados fechados ficam indisponíveis. Chamados de outros departamentos não são exibidos. Impacto e urgência não alteram essa decisão.</p>
+</blockquote>
+<p><strong>Dados para a matriz:</strong></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>id</th>
+<th>departamento</th>
+<th>estado</th>
+<th>impacto</th>
+<th>urgencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V-01</td>
+<td>Oficina</td>
+<td>aberto</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>V-02</td>
+<td>Oficina</td>
+<td>fechado</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>V-03</td>
+<td>Laboratório</td>
+<td>aberto</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>V-04</td>
+<td>Laboratório</td>
+<td>fechado</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p>Você pode usar <strong>Oficina como departamento solicitante nos quatro casos</strong> ou construir casos equivalentes válidos. Declare a escolha. O departamento do chamado é um campo do registro; o departamento solicitante é o segundo argumento da função. A relação igual/diferente compara esses dois valores.</p>
+<p>Todos esses insumos foram escritos para a avaliação; não são respostas observadas de um modelo. <a href="../avaliacoes/av2/insumos.html">Insumos originais</a>.</p>
+<h3>3. Delimite o recorte e escreva seu critério antes de avaliar</h3>
+<p>No item 1 da análise, identifique função/tarefa, quem usa o resultado, entradas válidas e limites. Reescreva R3/R4 com suas palavras. Diga o que precisaria coincidir para aprovar o comportamento e a documentação.</p>
+<p><strong>O esperado é derivado de R3</strong>, sem usar o retorno do candidato para decidir o que “deveria” acontecer. Se quiser defender uma mudança de requisito, identifique-a como uma proposta futura. Uma preferência por outra regra não modifica automaticamente o contrato vigente.</p>
+<h3>4. Monte a matriz com as quatro combinações obrigatórias</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Caso sugerido</th>
+<th>Entrada/referência</th>
+<th>Solicitante</th>
+<th>Relação de departamento / estado</th>
+<th>Campos que você vai calcular e preencher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>V-01</td>
+<td>Oficina</td>
+<td>Igual / aberto</td>
+<td>Esperado por R3; retorno do candidato; status; interpretação.</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>V-02</td>
+<td>Oficina</td>
+<td>Igual / fechado</td>
+<td>Esperado por R3; retorno do candidato; status; interpretação.</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>V-03</td>
+<td>Oficina</td>
+<td>Diferente / aberto</td>
+<td>Esperado por R3; retorno do candidato; status; interpretação.</td>
+</tr>
+<tr>
+<td>T4</td>
+<td>V-04</td>
+<td>Oficina</td>
+<td>Diferente / fechado</td>
+<td>Esperado por R3; retorno do candidato; status; interpretação.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Essa organização usa os dados disponíveis e mostra a cobertura solicitada. <strong>Os resultados e o parecer serão produzidos por você.</strong> Se criar outros dados, mantenha as quatro combinações, valores válidos e identificação suficiente para refazer a análise.</p>
+<p>Registre impacto e urgência por referência aos dados ou nos dicionários completos; explique o papel desses campos no critério. Diga o que manteve constante e o que variou. Nos dados fornecidos, o solicitante é constante; impacto e urgência são iguais dentro de cada par de departamento, mas diferem entre os dois pares. Não afirme que todos os valores são constantes.</p>
+<h3>5. Escolha a via de verificação</h3>
+<h4>Via A · inspeção por tabela</h4>
+<p>Leia cada expressão do candidato com os valores da linha. É possível fazer toda a AV2 desse modo, sem instalar ou executar nada.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Elemento de Python</th>
+<th>Como ler neste candidato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chamado["departamento"]</code></td>
+<td>Consulta o departamento do registro analisado.</td>
+</tr>
+<tr>
+<td><code>departamento</code></td>
+<td>É o departamento da pessoa solicitante passado à função.</td>
+</tr>
+<tr>
+<td><code>==</code></td>
+<td>Compara se os dois valores são iguais.</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Compara se os dois valores são diferentes.</td>
+</tr>
+<tr>
+<td><code>and</code></td>
+<td>O resultado só é verdadeiro quando as duas condições são verdadeiras.</td>
+</tr>
+<tr>
+<td><code>return</code></td>
+<td>Devolve o resultado da expressão. <code>True</code> representa permitir; <code>False</code>, não permitir.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Para cada caso, determine a primeira comparação, determine a segunda e combine as duas. Anote o <strong>retorno inferido por inspeção</strong> e compare com o esperado que você já tirou de R3. Esta leitura descreve o funcionamento do candidato; não redefine o contrato.</p>
+<details>
+<summary>Apoio de lógica · como interpretar “and”</summary>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Condição A</th>
+<th>Condição B</th>
+<th>A and B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verdadeira</td>
+<td>Verdadeira</td>
+<td>Verdadeiro</td>
+</tr>
+<tr>
+<td>Verdadeira</td>
+<td>Falsa</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Falsa</td>
+<td>Verdadeira</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Falsa</td>
+<td>Falsa</td>
+<td>Falso</td>
+</tr>
+</tbody>
+</table></div>
+<p>Em Python, quando a primeira condição é falsa, o <code>and</code> pode encerrar a avaliação sem avaliar a segunda. Para estes valores válidos e comparações simples, a tabela acima permite inferir o resultado lógico. Escreva o percurso com os valores concretos de seus casos, sem afirmar que observou uma execução.</p>
+<p>Exemplo de outra regra: em <code>idade &gt;= 18 and cadastro_confirmado</code>, uma pessoa de 20 anos com cadastro não confirmado tem a primeira condição verdadeira e a segunda falsa; a expressão resulta em <code>False</code>. Esse exemplo ensina a combinação lógica, não preenche a matriz de AV2.</p>
+</details>
+<h4>Via B · execução opcional em cópia isolada</h4>
+<p>Copie <strong>somente o candidato fornecido e os seus casos</strong> para um arquivo separado ou ambiente local de sua preferência. Não altere o código do kit. Python com a biblioteca padrão é suficiente; não há dependência de rede.</p>
+<ol>
+<li>Registre o esperado por R3 antes de executar.</li>
+<li>Represente cada registro como um dicionário com os cinco campos fornecidos.</li>
+<li>Chame <code>pode_visualizar_proposta(chamado, "Oficina")</code>, se essa for a escolha do solicitante.</li>
+<li>Registre o retorno de cada caso, o comando/ambiente utilizado e somente a saída essencial.</li>
+<li>Compare com o esperado e explique o percurso lógico de um caso decisivo e de um controle.</li>
+</ol>
+<details>
+<summary>Ajuda opcional de execução · estrutura mínima para um caso</summary>
+<p>Em um arquivo separado chamado, por exemplo, <code>verificacao_av2.py</code>, coloque primeiro a função candidata exatamente como fornecida. Abaixo dela, este formato mostra como representar e chamar <strong>um</strong> caso:</p>
+<pre><code class="language-python">chamado = {
+    &quot;id&quot;: &quot;V-01&quot;,
+    &quot;departamento&quot;: &quot;Oficina&quot;,
+    &quot;estado&quot;: &quot;aberto&quot;,
+    &quot;impacto&quot;: 1,
+    &quot;urgencia&quot;: 1,
+}
+solicitante = &quot;Oficina&quot;
+print(&quot;T1&quot;, chamado[&quot;id&quot;], solicitante,
+      pode_visualizar_proposta(chamado, solicitante))
+</code></pre>
+<p>Na pasta onde salvou o arquivo, uma instalação local de Python pode executá-lo com:</p>
+<pre><code class="language-text">python --version
+python verificacao_av2.py
+</code></pre>
+<p>Complete os demais casos obrigatórios a partir dos insumos. O exemplo acima só mostra a chamada de T1; não constitui a verificação completa. Copie para o anexo o comando e os retornos efetivamente obtidos, identificando o ambiente. O resultado esperado continua vindo de R3, calculado separadamente.</p>
+<p>Se Python não estiver disponível ou o comando não funcionar no seu ambiente, a via de inspeção continua suficiente. Não é necessário resolver instalação para entregar a atividade. Não cole resultados imaginados como se fossem uma execução.</p>
+</details>
+<h3>6. Explique um caso decisivo e um caso de controle</h3>
+<p>Um <strong>caso decisivo</strong> é aquele cujo resultado é especialmente relevante para justificar seu encaminhamento. Um <strong>caso de controle</strong> oferece um contraste que ajuda a entender e delimitar o comportamento. Escolha-os a partir da matriz e justifique a função de cada um; não basta chamá-los de “decisivo” e “controle”.</p>
+<p>Para ambos, mostre: entrada → esperado por contrato → avaliação das condições do candidato → retorno → comparação → efeito na decisão. Se houver divergência, localize-a. Se houver coincidência, explique o que ela demonstra naquele caso e o que não demonstra sobre outros casos.</p>
+<h3>7. Confronte três referências: contrato, código e documentação</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Comparação</th>
+<th>O que investigar</th>
+<th>Onde registrar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contrato × código</td>
+<td>O retorno do candidato coincide com o exigido para cada entrada?</td>
+<td>T1–T4 e E2.</td>
+</tr>
+<tr>
+<td>Contrato × documentação</td>
+<td>O texto descreve todas as condições pertinentes de R3, sem acrescentar restrições não aprovadas?</td>
+<td>E1 e E3, com trechos localizados.</td>
+</tr>
+<tr>
+<td>Código × documentação</td>
+<td>O comportamento descrito corresponde ao que foi inferido ou observado no candidato?</td>
+<td>Interpretação de E2/E3.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Código e documentação podem concordar entre si e ainda precisar de revisão em relação ao contrato. Por isso, dizer apenas “o texto explica o código” deixa uma comparação necessária de fora. Localize a frase relevante; não copie todo o material sem interpretá-lo.</p>
+<h3>8. Decida sobre os dois artefatos e compare uma alternativa</h3>
+<p>Emita <strong>aceite, aceite condicionado ou rejeição para o código e para a documentação</strong>, com referências às evidências. Se forem decisões iguais, deixe explícito que avaliou ambos. Se houver condição, diga qual é e como será conferida antes de considerar a condição satisfeita.</p>
+<p>Compare com uma alternativa de encaminhamento ou de implementação/documentação. Use o mesmo contrato e explique o que muda no esforço, no comportamento ou na condição de aprovação. Se propuser ajuste, <strong>reaplique os casos</strong> em tabela ou execução e registre os resultados e o método da alternativa separadamente dos resultados do candidato original.</p>
+<p>Uma revalidação por inspeção é válida: descreva precisamente o comportamento proposto e refaça o raciocínio das linhas T1–T4. Se executar uma versão ajustada, identifique qual versão foi executada. Não apresente somente “vou testar depois” como se fosse uma revalidação concluída.</p>
+<p>Se a alternativa for um encaminhamento sem mudança de implementação, explicite seu efeito, a razão da escolha e o critério para uma próxima versão. A regra de reaplicar os casos se aplica quando você propõe um ajuste de comportamento. Não trate uma mudança de requisito como uma simples correção aprovada.</p>
+<p>Identifique a <strong>função responsável pelo aceite</strong> e uma condição verificável para rever o parecer. Não invente que a pessoa já aprovou sua proposta.</p>
+<h3>9. Organize análise e anexo para permitir conferência</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Parte</th>
+<th>Conteúdo necessário</th>
+<th>Como tornar conciso e rastreável</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Análise · item 1</td>
+<td>Recorte, R3/R4 e critério prévio</td>
+<td>Declare tarefa, usuário do resultado e escopo.</td>
+</tr>
+<tr>
+<td>Análise · item 2</td>
+<td>Estratégia e justificativa da matriz</td>
+<td>Explique os dois eixos e os casos decisivo/de controle.</td>
+</tr>
+<tr>
+<td>Análise · item 3</td>
+<td>Achados e interpretação</td>
+<td>Aponte T1–T4 e E1–E3 em vez de repetir a matriz inteira.</td>
+</tr>
+<tr>
+<td>Análise · item 4</td>
+<td>Decisão comparada</td>
+<td>Inclua os dois artefatos, alternativa, eventual ajuste/revalidação, responsável e condição de revisão.</td>
+</tr>
+<tr>
+<td>Análise · item 5</td>
+<td>Procedência e limites</td>
+<td>Distinga origem didática, inspeção, execução, proposta e eventual IA.</td>
+</tr>
+<tr>
+<td>Anexo técnico</td>
+<td>Matriz e trechos E1–E3</td>
+<td>Inclua entradas ou referências completas, solicitante, esperado, retorno, status e interpretação.</td>
+</tr>
+<tr>
+<td>Anexo · se aplicável</td>
+<td>Execução e alternativa</td>
+<td>Comando/ambiente e saída essencial; tabela de revalidação de eventual ajuste.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>E1:</strong> trecho do contrato e localização. <strong>E2:</strong> trecho do código com percurso de um caso decisivo e um controle. <strong>E3:</strong> trecho da documentação e comparação com R3/código. Os rótulos são ponteiros: quando a análise disser “T2/E2”, o leitor deve encontrar exatamente a evidência correspondente.</p>
+<p>Não é necessário preencher quatro páginas se a análise completa couber em menos. O limite é <strong>até duas páginas para cada parte</strong>, e não quatro páginas livremente distribuídas. Se o texto exceder o limite, elimine repetições e logs extensos; preserve os elementos que sustentam a decisão.</p>
+<h3>10. Declare um limite concreto e confira a entrega</h3>
+<p>Um limite informa <strong>o que a cobertura não demonstra e por que isso importa</strong>. Relacione o limite aos casos escolhidos e ao escopo. Se indicar uma verificação adicional, explique a dúvida que ela resolveria. Não conclua sobre segurança de um sistema real ou produtividade de IA a partir desta função fictícia.</p>
+<ul>
+<li>Pelo menos quatro casos, cobrindo igual/diferente × aberto/fechado.</li>
+<li>Esperado por R3 separado do retorno do candidato e do status observado/inferido.</li>
+<li>Caso decisivo e controle com percurso lógico explicado.</li>
+<li>Código e documentação confrontados com o contrato, com trechos localizados.</li>
+<li>Decisão para ambos, alternativa comparada e revalidação de eventual ajuste.</li>
+<li>Responsável, condição de revisão, procedência, IA e limite com efeito na conclusão.</li>
+<li>Até duas páginas de análise e até duas páginas de anexo técnico.</li>
+</ul>
+<p><strong>Distribuição sugerida das 2h:</strong> 20min para recorte e critério; 60min para matriz, confronto e alternativa; 40min para registro e revisão.</p>
+<p><strong>Na orientação, vamos conferir:</strong> alguém conseguiria refazer uma linha da minha matriz sem perguntar quais dados, regra e método eu usei?</p>
+<div class="modelos">
+<p><a class="button-link" href="../avaliacoes/av2/README.html">Enunciado de AV2</a>
+<a class="button-link" href="../avaliacoes/av2/template-entrega.md" download>Baixar modelo editável · AV2</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV2</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av2">Copiar campos do modelo</button>
+<pre id="modelo-av2" class="modelo" tabindex="0"><code># Entrega individual — AV2
+
+Estudante: ___ · Data: ___ · Via: inspeção / execução opcional
+**Limites:** análise até duas páginas; anexo técnico até duas páginas. Enunciado.
+
+## Análise
+
+**1. Recorte e requisito.** Função/tarefa, quem usa o resultado e limites de entrada: ___
+R3/R4 em minhas palavras e critério de aceite definido antes da verificação: ___
+
+**2. Estratégia.** Eixos da matriz, motivo dos quatro casos e o que mantenho constante: ___
+Caso decisivo e caso de controle, com justificativa: ___
+
+**3. Evidência e interpretação.** Principais achados com referência a linhas T1–T4 e trechos E1–E3 do anexo: ___
+Relação entre contrato, comportamento do código e documentação: ___
+
+**4. Decisão comparada.** Encaminhamento do código e da documentação, com fundamento: ___
+Alternativa considerada / comparação sob o mesmo critério: ___
+Ajuste proposto, se aplicável, e revalidação (linhas do anexo): ___
+Responsável pelo aceite e condição para rever a decisão: ___
+
+**5. Procedência e limites.** Artefatos didáticos simulados utilizados: ___
+O que observei em execução / inferi por inspeção / apenas propus: ___
+Limite concreto da cobertura e consequência para minha decisão: ___
+IA: não utilizada / ferramenta-modelo visível: ___; data: ___; tarefa/contexto: ___; trecho aproveitado: ___; verificação/intervenção próprias: ___. Metadado indisponível: “não informado”.
+
+## Anexo técnico — trechos essenciais
+
+**Dados e condições comuns:** referência aos registros de insumos.md ou dicionários completos, departamento solicitante e valores mantidos: ___
+
+| Caso | Entrada/referência + solicitante | Relação de departamento / estado | Esperado por R3 | Retorno do candidato | Status observado/inferido | Interpretação |
+|---|---|---|---|---|---|---|
+| T1 | | Igual / aberto | | | | |
+| T2 | | Igual / fechado | | | | |
+| T3 | | Diferente / aberto | | | | |
+| T4 | | Diferente / fechado | | | | |
+
+**E1 — trecho do contrato e localização:** ___
+**E2 — trecho do código + percurso lógico de um caso decisivo e um controle:** ___
+**E3 — trecho da documentação e confronto com R3/código:** ___
+**Execução, se escolhida — ambiente, comando e trecho de saída:** ___ / não realizada.
+**Alternativa/ajuste e revalidação:** comportamento proposto: ___; T1–T4 após ajuste (esperado/retorno/status): ___; limite: ___.
+
+**Checklist:** [ ] 4 combinações; [ ] critérios prévios; [ ] código e texto; [ ] status; [ ] alternativa; [ ] limites/IA; [ ] 2+2 páginas.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="rubricas">Como os critérios de avaliação aparecem na resposta</h2></div>
+<p>As três primeiras atividades integram <strong>AV1</strong>, que vale <strong>20% da nota final</strong> pela média simples dos desafios dos blocos com presença. Não são 20% para cada desafio. <strong>AV2 vale 30%</strong> da nota final. Os pesos abaixo são internos a cada instrumento.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério comum de AV1</th>
+<th>Peso</th>
+<th>AV1.1</th>
+<th>AV1.2</th>
+<th>AV1.3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicação e decisão</td>
+<td>30%</td>
+<td>Modalidades ligadas aos cartões e responsabilidade.</td>
+<td>Critérios aplicados e decisões sobre A/B.</td>
+<td>Etapa assistida, autonomia e aceite.</td>
+</tr>
+<tr>
+<td>Evidência e raciocínio</td>
+<td>40%</td>
+<td>Fatos dos cartões e um exemplo explicado.</td>
+<td>Dois cálculos, trechos e alcance da alegação.</td>
+<td>Três estados, ordem, esperados e texto coerente.</td>
+</tr>
+<tr>
+<td>Limites, alternativa e revisão</td>
+<td>30%</td>
+<td>Outra modalidade, fronteira e condição de revisão.</td>
+<td>Condição não coberta, outra verificação e revisão.</td>
+<td>Comparação sem IA, lacuna de cobertura e revisão.</td>
+</tr>
+</tbody>
+</table></div>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério de AV2</th>
+<th>Peso</th>
+<th>Onde conferir antes de enviar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recorte e requisito</td>
+<td>15%</td>
+<td>Item 1: R3/R4, escopo, entradas e critério anterior à análise.</td>
+</tr>
+<tr>
+<td>Estratégia de verificação</td>
+<td>25%</td>
+<td>Item 2: quatro combinações, contraste, justificativa e cobertura.</td>
+</tr>
+<tr>
+<td>Evidência e rastreabilidade</td>
+<td>30%</td>
+<td>Item 3/anexo: entrada, esperado, retorno, método e trechos localizáveis.</td>
+</tr>
+<tr>
+<td>Decisão e alternativa</td>
+<td>20%</td>
+<td>Item 4: parecer fundamentado, comparação e revalidação pertinente.</td>
+</tr>
+<tr>
+<td>Procedência e limites</td>
+<td>10%</td>
+<td>Item 5: origem, eventual assistência, intervenção própria e efeito do limite.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cada critério recebe nível <strong>0 — ausente; 1 — incipiente; 2 — adequado; 3 — consistente</strong>, conforme os descritores oficiais. Um texto mais longo, mais prompts ou mais testes verdes não produzem automaticamente um nível maior. O que importa é permitir examinar o raciocínio e sua ligação com a decisão.</p>
+<details><summary>Descritores oficiais completos e conversão em nota</summary><h3>Rubrica comum de AV1</h3><p>Os enunciados trazem os indicadores específicos de cada desafio. A rubrica é aplicada seis vezes; as notas dos blocos com presença formam a média AV1.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Peso</th>
+<th>0 — Ausente</th>
+<th>1 — Incipiente</th>
+<th>2 — Adequado</th>
+<th>3 — Consistente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aplicação e decisão</strong></td>
+<td>30%</td>
+<td>Não responde à decisão solicitada</td>
+<td>Repete conceito ou conclusão da aula sem aplicar à nova situação</td>
+<td>Aplica o conceito às restrições do enunciado e decide coerentemente</td>
+<td>Compara alternativa plausível, reconhece diferenças entre situações e justifica a escolha</td>
+</tr>
+<tr>
+<td><strong>Evidência e raciocínio</strong></td>
+<td>40%</td>
+<td>Não apresenta critério nem evidência</td>
+<td>Afirma que funciona/é seguro/é maduro sem registro examinável</td>
+<td>Liga decisão a requisito, trecho, tabela, teste ou fato e descreve a verificação</td>
+<td>Explicita esperado e encontrado, examina contraexemplo ou evidência contrária e permite auditar a análise</td>
+</tr>
+<tr>
+<td><strong>Limites, alternativa e revisão</strong></td>
+<td>30%</td>
+<td>Não indica limite</td>
+<td>Cita risco ou alternativa genéricos</td>
+<td>Identifica limitação concreta e ação compatível para tratá-la</td>
+<td>Explica efeito do limite, alternativa possível e condição verificável para mudar a decisão</td>
+</tr>
+</tbody>
+</table></div>
+<p>Em AV1.1/5/6, evidência pode ser fato e restrição do cenário. Em AV1.2/3/4, inspeção de tabela ou trecho é válida se o raciocínio for verificável. Não executar código não reduz nota por si só; afirmar execução inexistente compromete a rastreabilidade.</p><h3>Rubrica de AV2</h3><p>Avaliar o candidato de acesso e sua documentação fornecidos no dossiê, usando R3/R4. Construir ao menos quatro casos cruzando departamento igual/diferente e estado aberto/fechado; inspecionar ou executar, decidir e propor alternativa. O candidato é distinto do exemplo resolvido na demonstração.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Peso</th>
+<th>0 — Ausente</th>
+<th>1 — Incipiente</th>
+<th>2 — Adequado</th>
+<th>3 — Consistente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recorte e requisito</strong></td>
+<td>15%</td>
+<td>Não define comportamento avaliado</td>
+<td>Confunde opinião sobre o candidato com requisito</td>
+<td>Identifica R3/R4, entradas e condição de aceite antes da análise</td>
+<td>Distingue regra vigente de mudança de requisito e explicita escopo e pressupostos</td>
+</tr>
+<tr>
+<td><strong>Estratégia de verificação</strong></td>
+<td>25%</td>
+<td>Não propõe verificação</td>
+<td>Usa apenas caso favorável ou espelha implementação</td>
+<td>Constrói quatro casos com esperado derivado do contrato e examina código/documento</td>
+<td>Justifica seleção, cobre contrastes relevantes e explica o que a estratégia não cobre</td>
+</tr>
+<tr>
+<td><strong>Evidência e rastreabilidade</strong></td>
+<td>30%</td>
+<td>Sem resultado examinável</td>
+<td>Conclusão sem entrada, origem ou resultado</td>
+<td>Registra entrada, esperado, encontrado e método, identificando execução/inspeção</td>
+<td>Análise repetível/auditável, divergência localizável e observação distinta de inferência</td>
+</tr>
+<tr>
+<td><strong>Decisão e alternativa</strong></td>
+<td>20%</td>
+<td>Não decide</td>
+<td>Aceita/rejeita sem fundamento ou só repete o assistente</td>
+<td>Decide por evidência e propõe alternativa coerente, incluindo revalidação</td>
+<td>Compara alternativas, explica impacto no contrato/documentação e define aceite da versão seguinte</td>
+</tr>
+<tr>
+<td><strong>Procedência e limites</strong></td>
+<td>10%</td>
+<td>Não identifica origem nem limite</td>
+<td>Declara genericamente uso de IA ou possível falha</td>
+<td>Identifica insumos, assistência quando usada, intervenção própria e limite de cobertura</td>
+<td>Explica efeito da procedência/limite na confiança e uma verificação adicional pertinente</td>
+</tr>
+</tbody>
+</table></div>
+<p>Não atribuir nota por quantidade de falhas, prompts ou testes verdes. Propor uma alteração e comprovar sua verificação são estados diferentes; o registro deve identificar o que realmente foi feito.</p><h3>Conversão dos níveis em nota</h3><div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Significado comum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0 — Ausente</strong></td>
+<td>Elemento não apresentado ou sem conteúdo avaliável para o critério</td>
+</tr>
+<tr>
+<td><strong>1 — Incipiente</strong></td>
+<td>Elemento genérico, incompleto ou sem sustentação suficiente</td>
+</tr>
+<tr>
+<td><strong>2 — Adequado</strong></td>
+<td>Aplicação correta ao caso, com evidência e limite explícitos</td>
+</tr>
+<tr>
+<td><strong>3 — Consistente</strong></td>
+<td>Decisão sustentada por comparação, verificação auditável e tratamento das condições relevantes</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nota do instrumento = <strong>10 × soma(peso do critério × nível/3)</strong>, usando pesos como fração. Atribuir um nível inteiro por critério e apontar a evidência que sustenta o julgamento. A ausência de um elemento afeta o critério correspondente, sem zerar automaticamente toda a entrega. Arredondar somente o resultado final conforme a regra acadêmica.</p>
+<p>Exemplo em AV1: níveis 3, 2 e 2 → 10 × (0,30×3/3 + 0,40×2/3 + 0,30×2/3) = <strong>7,67</strong>. Todos os níveis 2 resultam em 6,67; todos os níveis 3 resultam em 10. Essa conversão não define a nota mínima institucional de aprovação.</p></details>
+
+<div class="secao"><h2 id="duvidas">Dúvidas de preenchimento e revisão final</h2></div>
+<h3>“O que diferencia uma frase genérica de uma resposta examinável?”</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Registro incompleto</th>
+<th>Como melhorar sem aumentar muito o texto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“A IA pode errar.”</td>
+<td>Nomeie o resultado que precisa de conferência, a regra de referência e a comparação.</td>
+</tr>
+<tr>
+<td>“Está correto.”</td>
+<td>Aponte a entrada, o esperado e o trecho ou retorno que você comparou.</td>
+</tr>
+<tr>
+<td>“Vou fazer testes.”</td>
+<td>Descreva os casos e esperados; se só planejou, declare que não executou.</td>
+</tr>
+<tr>
+<td>“O humano valida.”</td>
+<td>Nomeie a função responsável e o critério de aprovação.</td>
+</tr>
+<tr>
+<td>“Pode ser diferente em outros casos.”</td>
+<td>Indique a condição que a evidência não cobre e a verificação que a examinaria.</td>
+</tr>
+<tr>
+<td>“Aceito se melhorar.”</td>
+<td>Diga o que deve mudar e qual evidência mostrará que a condição foi atendida.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>“Preciso usar IA ou programar?”</h3>
+<p>Não. Nas AV1.1–1.3, os registros escritos atendem ao que foi pedido. Na AV2, a inspeção por tabela e a execução opcional permitem atingir os mesmos níveis da rubrica. O uso pessoal de IA, quando ocorrer, precisa ser declarado e conferido. Não há bônus por ferramenta paga, API ou quantidade de comandos.</p>
+<h3>“Preciso anexar print, conversa inteira ou relatório dos testes do kit?”</h3>
+<p>Não. Preserve a evidência essencial no formato de cada atividade. Um print sem entrada, critério e explicação não substitui a análise. Na AV2, se executar, basta o comando/ambiente e o trecho pertinente da saída, dentro do anexo. Os testes gerais do kit analisam outro artefato e não substituem a matriz do candidato isolado.</p>
+<h3>“Posso escolher uma decisão diferente da de um colega?”</h3>
+<p>As justificativas são individuais e podem comparar encaminhamentos distintos, desde que respeitem o contrato e sejam sustentadas por evidências. Uma escolha diferente não dispensa os elementos pedidos. Discordar da regra deve ser identificado como proposta de mudança, não como uma nova regra já aprovada.</p>
+<h3>“E se faltar uma informação?”</h3>
+<p>Identifique a lacuna e explique sua consequência. Em AV1.1, informação ausente pode compor a evidência da decisão. Em AV1.2, metadados não fornecidos devem continuar como “não informado”. Em qualquer atividade, diferencie o que sabe, o que infere e o que pretende verificar.</p>
+<h3>“Como caber na página sem perder o necessário?”</h3>
+<p>Use a tabela do modelo, frases objetivas e referências aos IDs e regras. Retire instruções, transcrições longas e repetições. Reserve espaço para decisão, alternativa e limite; eles são parte da avaliação. Na AV2, deixe os detalhes da matriz no anexo e faça a análise apontar para eles.</p>
+<h3>Conferência dos últimos quatro minutos</h3>
+<ol>
+<li><strong>Material:</strong> estou respondendo à atividade correta, usando seus dados e seu modelo?</li>
+<li><strong>Critério:</strong> o esperado veio do contrato indicado?</li>
+<li><strong>Evidência:</strong> o leitor encontra entrada, comparação ou informação relevante sem adivinhar?</li>
+<li><strong>Status:</strong> está explícito o que calculei, inspecionei, executei ou apenas propus?</li>
+<li><strong>Decisão:</strong> expliquei o encaminhamento e comparei uma alternativa?</li>
+<li><strong>Limite:</strong> indiquei o que falta demonstrar e em que condição reveria a decisão?</li>
+<li><strong>Entrega:</strong> inclui autoria, origem, eventual IA e respeitei o limite de páginas?</li>
+</ol>
+<div class="secao"><h2 id="materiais">Materiais de referência</h2></div>
+<ul>
+<li><a href="../caso/regras.html">Contrato completo de Fila Clara</a>.</li>
+<li><a href="../exercicios/aula-1/README.html">AV1.1 — enunciado</a> e <a href="../exercicios/aula-1/template-registro.md">modelo editável</a>.</li>
+<li><a href="../exercicios/aula-2/README.html">AV1.2 — enunciado</a> e <a href="../exercicios/aula-2/template-registro.md">modelo editável</a>.</li>
+<li><a href="../exercicios/aula-3/README.html">AV1.3 — enunciado</a> e <a href="../exercicios/aula-3/template-registro.md">modelo editável</a>.</li>
+<li><a href="../avaliacoes/av2/README.html">AV2 — enunciado</a>, <a href="../avaliacoes/av2/insumos.html">insumos</a> e <a href="../avaliacoes/av2/template-entrega.md">modelo editável</a>.</li>
+<li><a href="../avaliacao.html">Avaliação e rubricas completas</a>.</li>
+<li><a href="../README.html">Índice do material da turma</a>.</li>
+</ul>
+<p>Este guia explica os enunciados vigentes e não cria entregas adicionais. Os exemplos de preenchimento usam outros recortes; a análise dos dados avaliativos e o parecer final permanecem individuais.</p>
+<footer>CESAR School · D1.1 · Turma 2026.2 · Guia de orientação para 02/10/2026.<br>Fonte: enunciados, modelos, contrato e rubricas do material discente. Horários de Brasília.</footer>
+<a class="voltar" href="#topo" aria-label="Voltar ao início do guia">↑ Início</a>
+</main>
+</body>
+</html>

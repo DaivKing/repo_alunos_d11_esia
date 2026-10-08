@@ -10,6 +10,8 @@ A [avaliação da disciplina](../avaliacao.md) é a referência pública para co
 
 ## AV1 — acesso aos seis desafios
 
+Na primeira hora da aula 4, vamos usar o [guia detalhado de AV1.1, AV1.2, AV1.3 e AV2](../apoio/guia-atividades-aula4.html), com todos os insumos, passos, exemplos, modelos e rubricas para consulta.
+
 **Dúvida sobre o que preencher ou como produzir evidência?** Leia o [guia dos exercícios](../exercicios/README.md), com instruções sobre os arquivos e um exemplo escrito. Os enunciados e modelos da AV1 ficam em `exercicios/aula-1/` a `exercicios/aula-6/`, a partir da raiz do repositório. Cada checklist confere um único registro; seus itens não são entregas separadas.
 
 | Desafio | Aplicação individual | Janela de produção, revisão e entrega |

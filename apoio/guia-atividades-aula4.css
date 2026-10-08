@@ -1,0 +1,59 @@
+/* Complementos do guia; cores e componentes partem do estilo compartilhado. */
+main{max-width:1100px}
+html{scroll-padding-top:0}
+h2[id]{scroll-margin-top:110px}
+h3,h4{break-after:avoid}
+.guia-nav{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:6px;padding:12px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+.guia-nav a,.button-link,button{display:inline-block;border:1px solid var(--line);border-radius:8px;background:var(--panel-2);color:var(--ink);font:inherit;font-size:14px;line-height:1.4;padding:9px 12px;text-decoration:none;cursor:pointer}
+.guia-nav a:hover,.button-link:hover,button:hover{border-color:var(--accent);text-decoration:none}
+button:focus-visible,summary:focus-visible,.tablewrap:focus-visible,.modelo:focus-visible{outline:3px solid var(--accent-soft);outline-offset:3px}
+.guia-nav a[aria-current="location"]{border-color:var(--accent);color:var(--accent-soft)}
+.ferramentas{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0}
+.ferramentas a{font-size:14px}
+.resumo{border-left:4px solid var(--accent);padding:14px 18px;background:var(--panel);border-radius:0 10px 10px 0;margin:16px 0}
+.modelos{margin:22px 0 38px}
+.modelos .button-link{margin:4px 5px 4px 0}
+details{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:14px 18px;margin:18px 0}
+summary{cursor:pointer;font-weight:700;color:var(--accent-soft);line-height:1.5}
+details[open]>summary{margin-bottom:14px}
+.modelo{white-space:pre-wrap;overflow-wrap:anywhere;max-height:640px;overflow-y:auto}
+pre code{font-size:13.5px}
+table{font-size:14px;line-height:1.55}
+.tablewrap{max-width:100%}
+.tablewrap table{min-width:620px}
+blockquote{overflow-wrap:anywhere}
+#feedback{font-size:14px;color:var(--accent-soft)}
+#feedback:empty{display:none}
+.voltar{position:fixed;right:18px;bottom:18px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font-size:13px}
+.skip-link{position:absolute;left:16px;top:-100px;background:var(--panel);padding:12px;z-index:20}
+.skip-link:focus{top:12px}
+@media(max-width:680px){
+  h2[id]{scroll-margin-top:150px}
+  main{padding:20px 14px 70px}
+  header.hero{padding:24px 20px}
+  header.hero h1{font-size:29px}
+  .guia-nav{gap:5px;padding:8px 0}
+  .guia-nav a{font-size:12px;padding:7px 9px}
+  .ferramentas button{width:100%;text-align:left}
+  details{padding:12px}
+  .voltar{right:10px;bottom:10px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  main{max-width:none;padding:0}
+  body{font-size:10.5pt;line-height:1.45}
+  .guia-nav,.ferramentas,.voltar,.skip-link,#feedback,button,noscript{display:none!important}
+  details{background:transparent;padding:10px 0;border:none}
+  details>summary{color:#111}
+  .modelo{max-height:none;overflow:visible;white-space:pre-wrap}
+  pre code{font-size:9pt}
+  .tablewrap{overflow:visible;break-inside:auto}
+  .tablewrap table{min-width:0;font-size:9pt;table-layout:fixed;overflow-wrap:anywhere}
+  th,td{padding:6px}
+  tr{break-inside:avoid}
+  thead{display:table-header-group}
+  .secao{break-after:avoid}
+  .resumo{background:transparent;break-inside:avoid}
+  .modelos pre{break-inside:auto}
+  .button-link{background:transparent;color:#111}
+}

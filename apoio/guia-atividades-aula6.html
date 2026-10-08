@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guia completo de AV1.4, AV1.5, AV1.6 e AV3: dados, passos, exemplos, modelos e critérios. Revisão, governança, maturidade e parecer integrador.">
+<title>Guia das atividades AV1.4, AV1.5, AV1.6 e AV3 · D1.1 · CESAR School</title>
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="guia-atividades-aula4.css">
+<style>:root{--accent:#FF8A3D;--accent-soft:#FFAF78}</style>
+<script src="guia-atividades-aula4.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<main id="conteudo">
+<header class="hero" id="topo">
+<div class="kicker">CESAR School · Engenharia de Software na Era da IA Generativa · D1.1</div>
+<h1>Da revisão ao parecer final</h1>
+<p class="sub">Guia passo a passo de AV1.4, AV1.5, AV1.6 e AV3</p>
+<p>O que analisar, como construir a evidência, como justificar uma decisão e o que entregar em cada atividade.</p>
+<div class="meta"><span class="pill"><b>AV1.4–AV1.6</b> · revisão, governança e maturidade</span><span class="pill"><b>AV3</b> · integração das evidências</span><span class="pill"><b>Consulta completa</b> · modelos e rubricas</span></div>
+</header>
+<nav class="guia-nav" aria-label="Seções do guia"><a href="#percurso">Percurso</a><a href="#base">Antes de começar</a><a href="#av14">AV1.4</a><a href="#av15">AV1.5</a><a href="#av16">AV1.6</a><a href="#av3">AV3</a><a href="#rubricas">Rubricas</a><a href="#duvidas">Dúvidas</a><a href="#materiais">Materiais</a></nav>
+<div class="ferramentas"><button type="button" id="expandir">Abrir todos os exemplos e modelos</button><button type="button" id="imprimir">Imprimir / salvar em PDF</button><a href="../README.html">Material da turma</a></div>
+<p id="feedback" role="status" aria-live="polite"></p>
+<noscript><p>Todo o conteúdo e os modelos podem ser lidos sem JavaScript. Abra os detalhes individualmente; para imprimir tudo, expanda-os antes de usar a impressão do navegador.</p></noscript>
+<div class="secao"><h2 id="percurso">Como percorrer este guia</h2></div>
+<p>Este guia acompanha <strong>AV1.4, AV1.5, AV1.6 e AV3</strong>, da leitura dos insumos até a revisão da entrega. As atividades se conectam: revisar um artefato, estabelecer condições de uso, diagnosticar a iniciativa e integrar a decisão num parecer.</p>
+<p>Você pode consultar diretamente a seção da atividade ou seguir o percurso abaixo. Os <strong>60 minutos são uma sugestão de orientação coletiva</strong>, semelhante ao guia anterior; não substituem os tempos de resolução previstos nem acrescentam uma hora ao cronograma oficial.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Minutos da orientação sugerida</th>
+<th>Foco</th>
+<th>Ao terminar…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00–05 · 5min</td>
+<td>Entregas e origem das evidências</td>
+<td>Sei onde escrever e qual insumo vale em cada atividade.</td>
+</tr>
+<tr>
+<td>05–17 · 12min</td>
+<td>AV1.4: proposta, teste e revalidação</td>
+<td>Sei comparar saídas e explicar o alcance do teste.</td>
+</tr>
+<tr>
+<td>17–29 · 12min</td>
+<td>AV1.5: pedido e regras de uso</td>
+<td>Sei relacionar fato, risco, ação, responsável e registro.</td>
+</tr>
+<tr>
+<td>29–41 · 12min</td>
+<td>AV1.6: maturidade e próximo passo</td>
+<td>Sei construir o diagnóstico e propor uma medida que permita decidir.</td>
+</tr>
+<tr>
+<td>41–56 · 15min</td>
+<td>AV3: parecer fundamentado</td>
+<td>Sei integrar os registros e aplicar as duas fontes de L0.</td>
+</tr>
+<tr>
+<td>56–60 · 4min</td>
+<td>Rubricas e revisão</td>
+<td>Sei conferir o que falta na minha entrega.</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Datas e envio.</strong> Os enunciados registram AV1.4 em <strong>02/10/2026, 21h15–21h50</strong>, AV1.5 em <strong>03/10/2026, 11h15–11h50</strong>, e AV1.6 em <strong>03/10/2026, 16h15–16h50</strong>, Brasília. A AV3 tem prazo <strong>proposto de 10/10/2026, às 23h59</strong>, Brasília. Este guia não altera prazos nem estabelece reabertura. Canal, formato de envio e eventual atualização serão informados pelo professor, conforme as regras acadêmicas.</p>
+</blockquote>
+<div class="secao"><h2 id="base">Antes de começar: entregas, fatos e propostas</h2></div>
+<h3>O que entregar em cada atividade</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Atividade</th>
+<th>Trabalho central</th>
+<th>Entrega individual</th>
+<th>Evidência principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AV1.4</strong></td>
+<td>Revisar uma função e o alcance do teste entregue</td>
+<td>Até <strong>1 página</strong> · 35min</td>
+<td>Comparação por R2, trecho do código/teste e conferência do ajuste.</td>
+</tr>
+<tr>
+<td><strong>AV1.5</strong></td>
+<td>Encaminhar um pedido corporativo e propor duas regras</td>
+<td>Até <strong>1 página</strong> · 35min</td>
+<td>Fatos do pedido que justificam regras; registros de cumprimento descritos como futuros.</td>
+</tr>
+<tr>
+<td><strong>AV1.6</strong></td>
+<td>Diagnosticar o estágio e planejar um próximo passo</td>
+<td>Até <strong>1 página</strong> · 35min</td>
+<td>Pelo menos dois fatos M1–M6, definição e argumento; métrica e metas propostas.</td>
+</tr>
+<tr>
+<td><strong>AV3</strong></td>
+<td>Recomendar um encaminhamento integrando verificação, governança, maturidade e literatura</td>
+<td>Até <strong>3 páginas de parecer + até 2 de evidências/referências</strong> · 120min autônomos</td>
+<td>Registro identificável de AV1/AV2, limite ou contraponto, fatos do recorte e duas fontes de L0 aplicadas.</td>
+</tr>
+</tbody>
+</table></div>
+<p>As tabelas fazem parte da resposta. Nas AV1, tudo cabe na própria página; na AV3, o parecer aponta para os trechos essenciais do anexo ou de uma entrega anterior. Não é necessário anexar conversas inteiras ou reunir novamente todos os trabalhos.</p>
+<h3>Qual material vale para qual análise?</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Onde usar</th>
+<th>Cuidado ao reutilizar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contrato R1–R4 e entradas sintéticas</td>
+<td>Conferir comportamento e documentação</td>
+<td>O esperado vem do contrato, antes da análise da proposta.</td>
+</tr>
+<tr>
+<td>Candidato, teste e registros <strong>TR-41 a TR-44</strong></td>
+<td>AV1.4</td>
+<td>São os artefatos específicos da avaliação; o exemplo demonstrado pelo professor é outro.</td>
+</tr>
+<tr>
+<td>Pedido de chamado interno/log e fatos de governança</td>
+<td>AV1.5 e condições de governança da AV3</td>
+<td>Não há chamado/log real disponível; autorização e condições não confirmadas continuam sendo lacunas.</td>
+</tr>
+<tr>
+<td>Cartão <strong>M1–M6</strong></td>
+<td>AV1.6 e situação da iniciativa na AV3</td>
+<td>Preservar os fatos desta variante, incluindo responsável e revisão definidos.</td>
+</tr>
+<tr>
+<td>Cenário-base da demonstração</td>
+<td>Acompanhar o raciocínio feito em aula</td>
+<td>Não transportar automaticamente sua ausência de dono formal para M1–M6 ou AV3.</td>
+</tr>
+<tr>
+<td>Seus registros de AV1/AV2 e fichamento L0</td>
+<td>Fundamentar a AV3</td>
+<td>Localizar trecho, método e limite; a entrega anterior não comprova algo além do que examinou.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Fila Clara é fictícia. O sistema de chamados já existe; o objeto de adoção é a <strong>assistência de IA à manutenção</strong>, para propor testes e documentação. A idade do sistema não define a maturidade dessa iniciativa.</p>
+<h3>Contrato de referência</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>Comportamento exigido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R1 — prioridade</strong></td>
+<td><code>impacto</code> e <code>urgencia</code> são inteiros de 1 a 3. Soma ≥ 5 → <code>alta</code>; 3 ≤ soma &lt; 5 → <code>media</code>; soma &lt; 3 → <code>baixa</code>. A saída <code>media</code> não tem acento.</td>
+</tr>
+<tr>
+<td><strong>R2 — listagem</strong></td>
+<td>Incluir <code>aberto</code> e <code>em_andamento</code>, excluir <code>fechado</code> e preservar a ordem de entrada.</td>
+</tr>
+<tr>
+<td><strong>R3 — visibilidade</strong></td>
+<td>Permitir acesso somente à pessoa do mesmo departamento do chamado, independentemente de estado ou prioridade.</td>
+</tr>
+<tr>
+<td><strong>R4 — documentação</strong></td>
+<td>Descrever as mesmas regras do contrato. Código, testes e texto devem ser confrontados com essa referência.</td>
+</tr>
+</tbody>
+</table></div>
+<p>As entradas fornecidas são válidas. O campo chama-se <code>estado</code>. Listar ativos e decidir acesso são funções diferentes; não transporte uma condição de R2 para R3. <a href="../caso/regras.html">Contrato completo</a>.</p>
+<h3>Distinguir a origem e o estado de cada afirmação</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Tipo de registro</th>
+<th>O que significa</th>
+<th>Forma de identificar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fato fornecido</td>
+<td>Informação declarada no insumo fictício</td>
+<td>“O enunciado informa…”, com ID ou trecho.</td>
+</tr>
+<tr>
+<td>Esperado</td>
+<td>Comportamento exigido pelo contrato</td>
+<td>“Pela regra R__, espero…”.</td>
+</tr>
+<tr>
+<td>Inferido por inspeção</td>
+<td>Resultado deduzido lendo o código</td>
+<td>“Por leitura do trecho…, a saída prevista é…”.</td>
+</tr>
+<tr>
+<td>Observado em execução</td>
+<td>Resultado efetivamente obtido ao rodar</td>
+<td>Entrada, comando, ambiente e trecho relevante da saída.</td>
+</tr>
+<tr>
+<td>Proposta</td>
+<td>Regra, ajuste, coleta, meta ou ação ainda futura</td>
+<td>“Proponho…”, “seria coletado…”, “condição proposta…”.</td>
+</tr>
+<tr>
+<td>Inferência própria</td>
+<td>Conclusão que você constrói a partir dos registros</td>
+<td>“Minha conclusão é…, porque o fato… satisfaz o critério…”.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uma fonte pode ser <strong>simulada</strong> e sua análise ser <strong>por inspeção</strong>: origem e método são campos diferentes. Um teste fornecido sem saída não deve ser descrito como executado. Um controle proposto não é um comprovante de controle realizado.</p>
+<h3>Como usar os modelos</h3>
+<ol>
+<li>Abra o enunciado da atividade e confira seus dados.</li>
+<li>Use <strong>Baixar modelo editável</strong> ou <strong>Ver e copiar o modelo</strong>. Cole no editor de sua preferência e substitua os espaços em branco.</li>
+<li>Retire as orientações de preenchimento da versão final, preserve os campos necessários e confira o limite de páginas.</li>
+<li>Declare autoria, origem dos insumos e eventual uso de IA. Envie pelo canal e no formato informados pelo professor.</li>
+</ol>
+<p><strong>Esta página é um guia de leitura: não armazena respostas nem realiza envio.</strong> Os modelos HTML também são para leitura. Não é preciso instalar Python, usar Git, contratar ferramenta ou obter acesso a uma API. Na AV1.4, inspeção documentada e execução opcional usam os mesmos critérios de avaliação.</p>
+<h3>Declaração de IA</h3>
+<p>Se utilizou assistência, informe ferramenta/modelo visível, tarefa/contexto, trecho aproveitado e o que verificou ou modificou. Para informação indisponível, use <strong>“não informado”</strong>. Se não utilizou: <strong>“IA não utilizada na elaboração deste registro.”</strong></p>
+<p>Decidir que a equipe fictícia poderia usar IA não significa que você a usou para elaborar sua resposta. A origem simulada dos insumos também não substitui sua declaração pessoal de assistência.</p>
+<div class="secao"><h2 id="av14">AV1.4 · Revisar uma proposta e o alcance do seu teste</h2></div>
+<div class="resumo"><strong>35min de esforço previsto · até 1 página.</strong> Ao final: comparação de saídas, análise do teste, decisão, ajuste e um caso de revalidação.</div>
+
+<h3>1. Entenda a tarefa</h3>
+<p>Você vai revisar uma função candidata e o teste entregue junto com ela. A referência é <strong>R2</strong>, que trata da inclusão/exclusão dos estados e da preservação da ordem. Primeiro determine o que a regra exige; depois examine o comportamento proposto.</p>
+<p>Seu produto é um <strong>parecer de revisão</strong>. Não é necessário substituir arquivos do repositório. Se escolher executar, use uma cópia isolada do candidato e declare exatamente o que foi executado.</p>
+<h3>2. Leia o candidato e a entrada de revisão</h3>
+<p><strong>Artefatos simulados do enunciado:</strong></p>
+<pre><code class="language-python"># Candidato isolado para análise; não substitua o código do repositório.
+def listar_ativos_proposta(chamados):
+    ativos = [c for c in chamados if c[&quot;estado&quot;] in (&quot;aberto&quot;, &quot;em_andamento&quot;)]
+    return sorted(ativos, key=lambda c: c[&quot;impacto&quot;] + c[&quot;urgencia&quot;], reverse=True)
+</code></pre>
+<p><strong>Entrada de revisão, nesta ordem:</strong></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>id</th>
+<th>departamento</th>
+<th>estado</th>
+<th>impacto</th>
+<th>urgencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TR-41</td>
+<td>Oficina</td>
+<td>em_andamento</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TR-42</td>
+<td>Laboratório</td>
+<td>aberto</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TR-43</td>
+<td>Oficina</td>
+<td>fechado</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>TR-44</td>
+<td>Oficina</td>
+<td>aberto</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Teste entregue:</strong> usa os mesmos registros na ordem <strong>TR-42, TR-44, TR-41, TR-43</strong>. Sua única asserção compara os IDs retornados a <code>["TR-42", "TR-44", "TR-41"]</code>.</p>
+<p>Não há saída de execução fornecida. A entrada de revisão e a entrada do teste têm <strong>ordens diferentes</strong>; identifique qual está examinando em cada parte da resposta.</p>
+<h3>3. Preencha a primeira tabela sem misturar referência e candidato</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Campo do modelo</th>
+<th>Como construir</th>
+<th>Como conferir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critério por R2</td>
+<td>Escreva as obrigações da regra antes de seguir o código.</td>
+<td>Está claro o que faria uma saída ser aceita?</td>
+</tr>
+<tr>
+<td>IDs esperados</td>
+<td>Percorra a entrada de revisão aplicando o contrato.</td>
+<td>A lista registra tanto os elementos quanto a sequência?</td>
+</tr>
+<tr>
+<td>IDs do candidato</td>
+<td>Siga a seleção e a expressão de retorno do código.</td>
+<td>Sua explicação permite reproduzir o percurso?</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Marque inferido por leitura ou observado em execução.</td>
+<td>A origem do resultado está explícita?</td>
+</tr>
+<tr>
+<td>Mecanismo/trecho</td>
+<td>Copie apenas a expressão que sustenta sua análise e explique seu efeito.</td>
+<td>O trecho está ligado ao resultado, em vez de aparecer sem comentário?</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uma comparação de listas considera os IDs e sua posição. Preencha as duas saídas por caminhos independentes: a primeira pelo requisito, a segunda pelo código. O guia mantém esses campos para sua análise individual.</p>
+<h3>4. Examine o alcance do teste entregue</h3>
+<p>Um teste combina <strong>uma entrada</strong> com <strong>uma comparação esperada</strong>. Para discutir seu alcance, descreva as duas coisas. Pergunte o que ele permite observar e se distinguiria comportamentos diferentes em relação ao contrato.</p>
+<p>No campo do modelo, localize a ordem de entrada e a asserção do teste. Explique sua relação com o comportamento que você identificou. Evite apenas escrever “o teste é bom”, “o teste é ruim” ou “faltam mais testes”: diga <strong>qual propriedade foi examinada e qual distinção precisa ser demonstrada</strong>.</p>
+<details>
+<summary>Exemplo de raciocínio · regra diferente da avaliação</summary>
+<p>Considere um exemplo inventado de <strong>R1</strong>, sem os registros TR-41–TR-44. Um teste verifica apenas <code>prioridade(1, 1) == "baixa"</code>. Duas funções hipotéticas passam: uma implementa toda R1; a outra sempre devolve <code>baixa</code>.</p>
+<p>Esse teste verifica a entrada escolhida, mas não distingue esses dois comportamentos. Uma entrada adicional como <code>(3, 3)</code>, cujo esperado é <code>alta</code>, permite examinar essa diferença. Isso ainda não demonstra cobertura de toda R1.</p>
+<p>Uma explicação possível seria: “Por inspeção, os dois comportamentos coincidem na entrada original. Proponho a nova entrada para distingui-los sob o mesmo contrato. Não executei as funções; o resultado é previsto por leitura.”</p>
+<p>O exemplo mostra <strong>como explicar o alcance</strong>, não resolve o candidato e a asserção de R2 da AV1.4.</p>
+</details>
+<h3>5. Decida, compare e proponha um ajuste</h3>
+<p>Escolha <strong>aceitar, aceitar com condições ou rejeitar</strong>, com fundamento na comparação. Explique a diferença entre <strong>manter</strong> e <strong>ajustar</strong> a proposta, considerando o contrato, e indique a função responsável pelo aceite.</p>
+<p>Descreva o ajuste em texto ou código. Dizer “corrigir a função” não informa o que deve mudar. Se sua decisão for condicionada, a condição precisa dizer o que será conferido antes do aceite; não basta adiar a decisão para “quando estiver melhor”.</p>
+<h3>6. Revalide e registre o limite</h3>
+<p>Na segunda tabela, descreva <strong>um caso para conferir o ajuste</strong>, com entrada e ordem, IDs esperados e resultado previsto por leitura ou observado. Revalidar significa comparar novamente após a alteração proposta. Você pode fazer isso por inspeção, explicando o novo comportamento.</p>
+<p>Não apresente o resultado da versão anterior como se fosse o resultado da versão ajustada. Se apenas planejou um teste, ainda falta descrever a conferência pedida: mostre o resultado que deduz para o ajuste e identifique o método.</p>
+<p>Finalize com uma condição que sua análise não cobriu, o efeito desse limite e uma evidência que faria rever o parecer. O número de testes ou a quantidade de mensagens ao assistente não substituem essa explicação.</p>
+<h3>Organização dos 35 minutos</h3>
+<p><strong>5min:</strong> ler R2 e registrar o critério. <strong>20min:</strong> comparar candidato e contrato, analisar o teste, decidir e conferir o ajuste. <strong>5min:</strong> revisar coerência e status das evidências. <strong>5min:</strong> finalizar identificação, procedência, declaração de IA e entrega.</p>
+<h3>Antes de enviar</h3>
+<ul>
+<li>Comparei esperado e retorno para a entrada de revisão, com ordem e método.</li>
+<li>Expliquei o mecanismo do código e o alcance da asserção entregue.</li>
+<li>Registrei decisão, comparação entre manter/ajustar e responsável pelo aceite.</li>
+<li>Descrevi ajuste e um caso de conferência com resultado e status.</li>
+<li>Incluí limite, condição de revisão, procedência e IA, em até uma página.</li>
+</ul>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-4/README.html">Enunciado de AV1.4</a>
+<a class="button-link" href="../exercicios/aula-4/template-registro.md" download>Baixar modelo editável · AV1.4</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.4</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av14">Copiar campos do modelo</button>
+<pre id="modelo-av14" class="modelo" tabindex="0"><code># Registro individual — AV1.4
+
+
+**Limite: uma página.** Estudante: ___ — Data: ___
+**Critério de aceite por R2:** ___
+
+| Entrada | IDs esperados por R2 | IDs do candidato | Status: inferido/observado | Mecanismo/trecho essencial |
+|---|---|---|---|---|
+| TR-41, TR-42, TR-43, TR-44 | | | | |
+
+**Teste entregue — o que verifica e o que não consegue distinguir:** ___
+**Trecho do teste (entrada e comparação de IDs) que sustenta minha análise:** ___
+**Decisão (aceitar, aceitar com condições ou rejeitar) e motivo:** ___
+**Comparação entre manter e ajustar / responsável pelo aceite:** ___
+**Ajuste proposto (texto ou código):** ___
+
+| Caso para conferir o ajuste: entrada e ordem | IDs esperados | Resultado previsto ou observado / status |
+|---|---|---|
+| | | |
+
+**Limite remanescente e condição para rever o parecer:** ___
+**Origem dos dados e da análise:** candidato/teste/entrada simulados; método próprio: inspeção / execução; comando e trecho de saída, se executado: ___ / não realizado.
+**Uso de IA neste registro:** não utilizada / ferramenta-modelo: ___; tarefa/contexto: ___; trecho aproveitado e minha verificação: ___.
+
+**Revisão:** [ ] comparação com R2; [ ] alcance do teste; [ ] ajuste/revalidação; [ ] status; [ ] uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av15">AV1.5 · Encaminhar um pedido de uso corporativo</h2></div>
+<div class="resumo"><strong>35min de esforço previsto · até 1 página.</strong> Ao final: encaminhamento, alternativa e duas regras completas, com tratamento de exceção.</div>
+
+<h3>1. Leia o pedido e os fatos disponíveis</h3>
+<p>Uma pessoa da manutenção de Fila Clara quer <strong>colar o texto de um chamado interno e seu log em um assistente externo</strong>, para receber uma explicação e uma proposta de teste. O chamado poderia conter identificação de colaborador, texto livre sobre incidente e informações de acesso. <strong>Nenhum chamado ou log real é fornecido ou deve ser utilizado na avaliação.</strong></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Fato fornecido</th>
+<th>O que deve permanecer explícito na análise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ferramenta autorizada, condições contratuais, retenção, treinamento, permissões de envio e política de dados ainda não foram confirmados.</td>
+<td>Informações ausentes não podem ser convertidas em condições já verificadas.</td>
+</tr>
+<tr>
+<td>Há cópia didática com dados sintéticos, R1–R4 e entradas válidas.</td>
+<td>Esse é um recurso descrito no cenário; não equivale ao chamado interno/log real.</td>
+</tr>
+<tr>
+<td>A manutenção pode revisar manualmente uma explicação ou proposta de teste. Segurança e a gestora podem esclarecer condições e autorizações, mas ainda não decidiram.</td>
+<td>Capacidade de revisar e possibilidade de consulta não são decisões já emitidas.</td>
+</tr>
+<tr>
+<td>O pedido é de apoio à compreensão e ao teste; não há autorização para alteração em produção.</td>
+<td>O escopo da análise deve ser mantido junto de cada ação proposta.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2. Declare o critério e o encaminhamento</h3>
+<p>O critério explica o que precisa estar estabelecido para a forma de uso que você considera. Depois, diga <strong>o que a equipe pode fazer nas condições atuais e por quê</strong>, usando os fatos fornecidos.</p>
+<p>Compare com outra maneira viável de avançar na tarefa com os recursos descritos. A comparação deve tratar viabilidade, risco e esforço sob as mesmas condições. Não presuma que existe uma conta corporativa, um contrato ou uma autorização que o enunciado não informou.</p>
+<h3>3. Construa duas regras: dados e resultado</h3>
+<p>Preencha uma linha sobre <strong>dados</strong> e outra sobre <strong>qualidade ou uso da resposta</strong>. Cada linha precisa formar uma relação completa:</p>
+<p><strong>Fato do pedido → risco e consequência → ação concreta → responsável → registro de cumprimento proposto.</strong></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Coluna do modelo</th>
+<th>O que escrever</th>
+<th>Pergunta de revisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trecho do enunciado</td>
+<td>O fato que torna a regra pertinente</td>
+<td>A regra responde a uma condição deste pedido?</td>
+</tr>
+<tr>
+<td>Risco e consequência</td>
+<td>O que poderia dar errado e seu efeito</td>
+<td>Expliquei a consequência, além de nomear “segurança” ou “erro”?</td>
+</tr>
+<tr>
+<td>Ação</td>
+<td>O que fazer para tratar o risco</td>
+<td>Outra pessoa saberia executar essa ação?</td>
+</tr>
+<tr>
+<td>Responsável</td>
+<td>Papel que executa ou responde pela ação</td>
+<td>Está claro quem faz o quê?</td>
+</tr>
+<tr>
+<td>Registro proposto</td>
+<td>O que documentaria o cumprimento e permitiria conferi-lo</td>
+<td>O registro mostraria a ação realizada, sua referência e quem respondeu?</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Usar com cuidado” não define um mecanismo. “Guardar evidência” não define qual registro seria útil. Também não basta acrescentar “revisão humana” sem explicar o objeto e o critério dessa revisão.</p>
+<h3>4. Diferencie duas evidências</h3>
+<p><strong>Evidência disponível:</strong> o trecho do enunciado que justifica sua regra. Você já pode citá-lo.</p>
+<p><strong>Evidência futura de cumprimento:</strong> o registro que seria produzido se a regra fosse aplicada. Você descreve o conteúdo necessário, mas não precisa obter aprovação ou executar controle.</p>
+<p>Escreva, por exemplo, “registro proposto para futura conferência”, quando esse for o status. Não assine em nome de outra pessoa, invente data de aprovação ou produza comprovante fictício como se fosse real.</p>
+<details>
+<summary>Exemplo de formato · outro processo, fora do pedido avaliativo</summary>
+<p>Imagine uma <strong>situação didática inventada</strong> de publicação de um aviso em uma intranet: o rascunho ainda não foi comparado com o calendário aprovado.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Fato</th>
+<th>Risco e consequência</th>
+<th>Ação proposta</th>
+<th>Responsável proposto</th>
+<th>Registro futuro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O rascunho não foi conferido com o calendário.</td>
+<td>Publicar data incorreta pode fazer leitores perderem o evento.</td>
+<td>Comparar datas do texto com a versão aprovada do calendário antes de publicar.</td>
+<td>Pessoa responsável pela comunicação.</td>
+<td>Lista de datas conferidas, versão de referência, diferenças tratadas, data e identificação de quem revisou.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Esse exemplo ensina a <strong>ligação entre as colunas</strong>. Não escolhe o encaminhamento nem preenche as regras de dados e resultado da AV1.5. O papel responsável e o registro são propostas, não ações realizadas.</p>
+</details>
+<h3>5. Trate lacuna, exceção e revisão da decisão</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Campo final</th>
+<th>Como desenvolver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Informação ausente</td>
+<td>Selecione uma lacuna relevante e explique como afeta sua escolha.</td>
+</tr>
+<tr>
+<td>Exceção</td>
+<td>Diga como o pedido seria encaminhado, quem o avaliaria e como a decisão seria registrada. Não presuma aprovação.</td>
+</tr>
+<tr>
+<td>Condição para rever</td>
+<td>Nomeie uma informação ou evidência verificável e explique como sua orientação dependeria dela.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uma exceção é uma situação a ser analisada por quem tem responsabilidade, não uma autorização automática. A atividade pede uma proposta de governança para um cenário hipotético; não exige parecer jurídico ou pesquisa de contrato de fornecedor real.</p>
+<h3>Organização dos 35 minutos</h3>
+<p><strong>5min:</strong> ler pedido e separar fatos/lacunas. <strong>20min:</strong> encaminhamento, alternativa, duas regras e campos finais. <strong>5min:</strong> conferir se cada mecanismo trata o risco e pode ser verificado. <strong>5min:</strong> identificação, procedência, declaração de IA e entrega.</p>
+<h3>Antes de enviar</h3>
+<ul>
+<li>Justifiquei o encaminhamento e comparei uma alternativa viável.</li>
+<li>Completei duas regras: uma de dados e outra de resultado.</li>
+<li>Em cada linha, liguei fato, risco/consequência, ação, responsável e registro proposto.</li>
+<li>Expliquei lacuna, tratamento de exceção e condição para rever a decisão.</li>
+<li>Declarei a origem hipotética e eventual IA; não usei dados reais; respeitei uma página.</li>
+</ul>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-5/README.html">Enunciado de AV1.5</a>
+<a class="button-link" href="../exercicios/aula-5/template-registro.md" download>Baixar modelo editável · AV1.5</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.5</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av15">Copiar campos do modelo</button>
+<pre id="modelo-av15" class="modelo" tabindex="0"><code># Registro individual — AV1.5
+
+
+**Limite: uma página.** Estudante: ___ · Data: ___
+**Critério de decisão:** ___
+**Encaminhamento do pedido e justificativa:** ___
+**Alternativa viável / comparação de viabilidade, risco e esforço:** ___
+
+| Regra | Trecho do enunciado que justifica a regra | Risco e consequência | Ação para tratar o risco | Responsável | Registro proposto para conferir o cumprimento |
+|---|---|---|---|---|---|
+| 1 — dados | | | | | |
+| 2 — resultado | | | | | |
+
+**Informação ausente que importa para minha escolha:** ___
+**Tratamento de exceção (encaminhamento, responsável e registro):** ___
+**Condição/evidência que mudaria minha decisão:** ___
+
+**Origem dos dados e da análise:** pedido e fatos hipotéticos do enunciado; regras e decisões propostas por mim. Nenhum chamado/log real utilizado.
+**Uso de IA neste registro:** não utilizada / ferramenta-modelo visível: ___; tarefa/contexto: ___; trecho aproveitado e verificação própria: ___.
+
+**Revisão:** [ ] decisão/alternativa; [ ] duas regras completas; [ ] exceção/limite; [ ] uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av16">AV1.6 · Diagnosticar maturidade e definir o próximo passo</h2></div>
+<div class="resumo"><strong>35min de esforço previsto · até 1 página.</strong> Ao final: diagnóstico por fatos, resposta ao argumento rival e próximo passo com medida e condições de decisão.</div>
+
+<h3>1. Delimite o objeto e leia o cartão completo</h3>
+<p>O objeto é <strong>o uso de IA pela manutenção para propor testes e documentação</strong>. O sistema de chamados já existe. Este cartão tem fatos próprios; não é uma continuação automática da situação usada na demonstração do professor.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Fato disponível no momento da decisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1</strong></td>
+<td>Há um artefato demonstrável com três exemplos sintéticos de propostas de testes e documentação.</td>
+</tr>
+<tr>
+<td><strong>M2</strong></td>
+<td>A gestora designou uma pessoa responsável pela iniciativa.</td>
+</tr>
+<tr>
+<td><strong>M3</strong></td>
+<td>Foi definida revisão humana de todas as propostas antes de qualquer uso.</td>
+</tr>
+<tr>
+<td><strong>M4</strong></td>
+<td>Foi escrito um plano de duas semanas com duas pessoas da manutenção, dados sintéticos e registro de resultados.</td>
+</tr>
+<tr>
+<td><strong>M5</strong></td>
+<td>Até hoje ocorreram zero execuções com usuários; o plano de duas semanas ainda não começou.</td>
+</tr>
+<tr>
+<td><strong>M6</strong></td>
+<td>Não há série de resultados de qualidade, retrabalho, tempo total ou incidentes; metas ainda serão definidas.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2. Use as definições de trabalho do enunciado</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Definição usada nesta atividade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploração</td>
+<td>Examina possibilidades.</td>
+</tr>
+<tr>
+<td>Protótipo</td>
+<td>Tem artefato demonstrável em ambiente controlado.</td>
+</tr>
+<tr>
+<td>Piloto</td>
+<td>Tem execução limitada no fluxo com participantes e resultados acompanhados.</td>
+</tr>
+<tr>
+<td>Uso sustentado</td>
+<td>Tem operação recorrente com governança e evidências ao longo do tempo.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Escolha o estágio e explicite a definição. A justificativa precisa relacionar o que a definição exige aos fatos fornecidos. O nome isolado não substitui essa relação.</p>
+<h3>3. Preencha a tabela com pelo menos dois fatos</h3>
+<p>Cada linha contém <strong>ID → trecho essencial → o que sustenta / o que não sustenta</strong>. Selecionar os fatos, interpretá-los e escolher o estágio são partes da sua resposta.</p>
+<p>Use este formato de raciocínio, completando com sua análise: <strong>“O fato M__ informa [trecho]. Isso atende à exigência [elemento da definição], porque [relação]. Seu alcance termina em [limite].”</strong></p>
+<p>Evite copiar os seis fatos sem explicar sua função. Também não acrescente resultados, participantes que já teriam executado tarefas ou condições de outra variante do caso.</p>
+<h3>4. Responda ao argumento rival</h3>
+<p>O enunciado pede analisar a afirmação: <strong>“ter responsável, revisão e duas semanas planejadas já caracteriza o estágio seguinte”.</strong></p>
+<p>Na resposta, mostre qual definição está usando para avaliar o argumento, quais fatos sustentam sua posição e qual evidência seria necessária para justificar outra classificação. Dizer apenas “discordo” ou repetir seu estágio inicial não explica a fronteira entre os diagnósticos.</p>
+<h3>5. Proponha um passo que responda à lacuna</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>O que delimitar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tarefa</td>
+<td>Qual atividade seria realizada e qual produto seria examinado.</td>
+</tr>
+<tr>
+<td>Participantes</td>
+<td>Quem participaria e em qual papel.</td>
+</tr>
+<tr>
+<td>Duração</td>
+<td>Prazo proposto para esse recorte.</td>
+</tr>
+<tr>
+<td>Dados</td>
+<td>Quais entradas seriam usadas, preservando as condições do enunciado.</td>
+</tr>
+<tr>
+<td>Responsável</td>
+<td>Quem responde pelo passo e pelo encaminhamento dos registros.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Explique por que o passo produziria informação pertinente à lacuna que você apontou. Um plano com muitos detalhes ainda precisa dessa ligação. A atividade não exige executar o plano ou medir pessoas.</p>
+<h3>6. Defina a métrica, a comparação e o limite</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Pergunta que precisa ser respondida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O que medir</td>
+<td>Qual aspecto do resultado ou do fluxo importa para a decisão?</td>
+</tr>
+<tr>
+<td>Fórmula/unidade</td>
+<td>Como calcular ou registrar? Se for taxa, o que conta no numerador e no denominador?</td>
+</tr>
+<tr>
+<td>Coleta</td>
+<td>Quem registraria, em que momento e com qual instrumento ou evidência?</td>
+</tr>
+<tr>
+<td>Referência</td>
+<td>Com que processo, condição ou registro comparável seria confrontado?</td>
+</tr>
+<tr>
+<td>Limite</td>
+<td>O que essa medida deixa de mostrar e como isso afeta sua interpretação?</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Medir produtividade” não explica a coleta. “Comparar antes e depois” ainda precisa dizer se as tarefas e os critérios são comparáveis. Metas ou limiares escolhidos por você devem aparecer como <strong>propostas</strong>, acompanhados de sua justificativa.</p>
+<details>
+<summary>Exemplo de medida · outra tarefa, sem diagnosticar M1–M6</summary>
+<p>Em um exemplo didático de <strong>organização de arquivos públicos</strong>, uma equipe quer conferir uma nova rotina de catalogação. Propõe a taxa <code>arquivos catalogados sem correção / arquivos revisados no período</code>, contando cada arquivo uma vez.</p>
+<p>O plano de coleta prevê registrar identificador, decisão de revisão e correções; a referência seria a rotina manual com tipos de arquivo e critérios equivalentes. Um limite é que a taxa não mostra o tempo gasto para chegar à versão aprovada. Por isso o plano poderia registrar o esforço de correção em separado.</p>
+<p>Tudo aqui é um <strong>desenho de coleta</strong>, sem resultados. O exemplo mostra as peças de uma medida; a métrica e as condições da AV1.6 devem ser escolhidas para o próximo passo que você propuser.</p>
+</details>
+<h3>7. Escreva duas condições e seu efeito no diagnóstico</h3>
+<p><strong>Avanço:</strong> qual resultado ou evidência justificaria avançar e quem decidiria? <strong>Interrupção:</strong> qual condição exigiria interromper e quem agiria? Relacione cada uma à coleta ou ao registro que permitiria conferi-la.</p>
+<p>Explique como resultados possíveis mudariam sua análise. Uma condição de sucesso não substitui uma condição de interrupção. Resultado inconclusivo também precisa ser reconhecido: ausência de informação suficiente não deve virar evidência favorável por omissão.</p>
+<h3>Organização dos 35 minutos</h3>
+<p><strong>5min:</strong> cartão e definições. <strong>20min:</strong> diagnóstico, contraponto e proposta. <strong>5min:</strong> coerência entre lacuna, passo, métrica e condições. <strong>5min:</strong> procedência, declaração de IA e entrega. Nos slides da aula, leitura/produção ocupam 25min; revisão/entrega completam os 10min seguintes.</p>
+<h3>Antes de enviar</h3>
+<ul>
+<li>Declarei objeto e estágio e apliquei a definição a pelo menos dois fatos M1–M6.</li>
+<li>Respondi ao argumento rival e localizei a evidência que falta.</li>
+<li>Propus tarefa, participantes, duração, dados e responsável.</li>
+<li>Defini métrica, coleta, referência e limite, com numerador/denominador se for taxa.</li>
+<li>Escrevi avanço/interrupção, responsáveis e efeito possível no diagnóstico.</li>
+<li>Marquei planos e metas como propostas; declarei origem e IA; respeitei uma página.</li>
+</ul>
+<div class="modelos">
+<p><a class="button-link" href="../exercicios/aula-6/README.html">Enunciado de AV1.6</a>
+<a class="button-link" href="../exercicios/aula-6/template-registro.md" download>Baixar modelo editável · AV1.6</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV1.6</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av16">Copiar campos do modelo</button>
+<pre id="modelo-av16" class="modelo" tabindex="0"><code># Registro individual — AV1.6
+
+
+**Limite: uma página.** Estudante: ___ · Data: ___
+**Objeto do diagnóstico e estágio escolhido:** ___
+**Critério/definição adotada:** ___
+
+| Fato identificado | Trecho essencial | O que sustenta / o que não sustenta |
+|---|---|---|
+| M__ | | |
+| M__ | | |
+
+**Resposta ao argumento de que responsável, revisão e plano já caracterizam o estágio seguinte:** ___
+**Evidência que falta para justificar outra classificação:** ___
+**Próximo passo proposto — tarefa, participantes, duração, dados e responsável:** ___
+
+| Métrica (fórmula/unidade) | Como coletar e referência para comparar | Limite da medida |
+|---|---|---|
+| | | |
+
+**Condição proposta de avanço / quem decide:** ___
+**Condição proposta de interrupção / quem age:** ___
+**Como os resultados mudariam meu diagnóstico:** ___
+
+**Origem dos dados e da análise:** fatos M1–M6 simulados; diagnóstico inferido; passo, metas e condições propostos, ainda não executados.
+**Uso de IA neste registro:** não utilizada / ferramenta-modelo: ___; tarefa/contexto: ___; trecho aproveitado e verificação própria: ___.
+
+**Revisão:** [ ] diagnóstico/fatos; [ ] contraponto; [ ] métrica/comparação; [ ] avanço/interrupção; [ ] uma página.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="av3">AV3 · Parecer integrador fundamentado</h2></div>
+<div class="resumo"><strong>120min autônomos · até 3 páginas de parecer + até 2 de evidências/referências.</strong> Ao final: uma recomendação própria, comparada e sustentada por registros, controles e duas fontes de L0.</div>
+
+<h3>1. Entenda o que torna este trabalho integrador</h3>
+<p>O parecer responde à gestora sobre <strong>assistência de IA para propor testes e documentação</strong>. Você deve recomendar <strong>uso, adoção condicionada ou não adoção</strong>, explicando o alcance da escolha. O parecer articula os registros anteriores; não basta juntá-los sem explicar o que sustentam na decisão atual.</p>
+<p>O dossiê admite também uma situação profissional abstrata, com evidências equivalentes, sem dados confidenciais nem nova coleta. Declare o recorte e os pressupostos. Fila Clara já oferece os insumos necessários para demonstrar todos os critérios.</p>
+<h3>2. Monte uma seleção pequena de materiais</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Material a reunir</th>
+<th>O que selecionar</th>
+<th>Onde entra no parecer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contrato R1–R4</td>
+<td>Regra pertinente à tarefa escolhida</td>
+<td>Problema, critério de aceite e verificação.</td>
+</tr>
+<tr>
+<td>Registros de AV1/AV2</td>
+<td>Pelo menos uma evidência identificável: entrada/fato, critério, resultado e método</td>
+<td>E1 e argumento de verificação.</td>
+</tr>
+<tr>
+<td>Limite ou contraponto</td>
+<td>Trecho contrário ou limitação concreta da evidência</td>
+<td>E2 e efeito na confiança da recomendação.</td>
+</tr>
+<tr>
+<td>AV1.5</td>
+<td>Condições e lacunas de uso externo e dados</td>
+<td>Dois riscos, mecanismos, responsáveis e tratamento de exceções.</td>
+</tr>
+<tr>
+<td>Cartão M1–M6 de AV1.6</td>
+<td>Fatos da situação da iniciativa</td>
+<td>Diagnóstico de maturidade e próximo passo.</td>
+</tr>
+<tr>
+<td>Fichamento L0</td>
+<td>Uma afirmação pertinente de cada uma das duas fontes, com localização e limite</td>
+<td>F1 e F2 integradas ao argumento.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>O recorte da AV3 combina M1–M6 e as condições de governança de AV1.5 conforme o dossiê.</strong> Nesse recorte há responsável e revisão definidos, enquanto as condições de uso externo e dados ainda não foram confirmadas. Uma condição não preenche automaticamente a outra. Não reutilize a ausência de dono formal do cenário-base como se fosse fato desta variante.</p>
+<h3>3. Use os primeiros 20 minutos para recortar e comparar</h3>
+<p>Defina <strong>tarefa, beneficiário e resultado esperado</strong>. “Adotar IA na empresa” é amplo demais para mostrar uma comparação examinável. Escolha um trabalho delimitado dentro do objeto do dossiê.</p>
+<p>Monte <strong>pelo menos duas alternativas no total</strong>, incluindo o processo <strong>sem IA</strong>. A outra alternativa deve ser descrita sob as mesmas restrições: quais recursos usa, o que pode produzir, quem verifica e qual é a consequência de uma saída inadequada.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Campo da comparação</th>
+<th>Como desenvolver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Processo e recursos</td>
+<td>O caminho de trabalho de cada alternativa, com o que está disponível no cenário.</td>
+</tr>
+<tr>
+<td>Benefício esperado / pressuposto</td>
+<td>O que poderia melhorar e de que condição depende. Não trate expectativa como ganho medido.</td>
+</tr>
+<tr>
+<td>Limite e consequência do erro</td>
+<td>O que a alternativa não resolve e o efeito de falhar naquele recorte.</td>
+</tr>
+<tr>
+<td>Esforço de verificação</td>
+<td>O trabalho de conferir, corrigir e aprovar, inclusive no processo sem IA.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Escreva a recomendação e explique por que ela é preferível diante dessa comparação. Uma escolha de não adoção também precisa de argumento e alternativa; uma escolha condicionada precisa de condições verificáveis.</p>
+<h3>4. Nos 70 minutos de redação, construa as seis partes</h3>
+<h4>Parte 1 — Recomendação e problema</h4>
+<p>Comece com a tarefa e a decisão: <strong>“Recomendo [encaminhamento] para [tarefa], considerando [restrições], porque [comparação sustentada].”</strong> Preencha com seu argumento. Identifique beneficiário e resultado, apresente as alternativas e explique o motivo da escolha.</p>
+<h4>Parte 2 — Autonomia e responsabilidade</h4>
+<p>Delimite o que pode ser sugerido e o que permanece sob aceite humano. Nomeie o responsável, o critério de revisão e uma condição que exige intervenção. Explique como recusar ou desfazer uma saída inadequada e como tratar uma exceção.</p>
+<p>“A IA faz e alguém revisa” deixa dúvidas: qual etapa, qual artefato, qual referência e quem aceita? A fronteira de assistência precisa acompanhar a consequência de uma falha na tarefa escolhida.</p>
+<h4>Parte 3 — Verificação e contraponto</h4>
+<p>Use <strong>E1</strong> para identificar uma evidência essencial. Pode ser um registro de AV1 ou AV2, com entrada ou fato, critério, resultado, método e interpretação. Diga <strong>qual parte da recomendação ela sustenta</strong>.</p>
+<p>Use <strong>E2</strong> para localizar uma limitação ou contraponto e explicar seu efeito. Não é obrigatório realizar um novo experimento negativo: uma limitação concreta da evidência existente atende ao papel de contraponto quando seu efeito é discutido.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Registro insuficiente</th>
+<th>Como torná-lo examinável</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“Minha AV2 mostra que a IA pode errar.”</td>
+<td>Identifique a entrega e o trecho; explique o critério, resultado e que verificação isso torna necessária no recorte escolhido.</td>
+</tr>
+<tr>
+<td>“Fiz testes.”</td>
+<td>Localize entrada, esperado, encontrado e método; se foi inspeção, identifique como inferência por leitura.</td>
+</tr>
+<tr>
+<td>“Há limitações.”</td>
+<td>Nomeie a condição não coberta e diga o que ela impede concluir ou em que condição mudaria sua decisão.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uma evidência de erro em um artefato específico não mede a taxa de erro de toda ferramenta. Da mesma forma, um resultado favorável isolado não comprova benefício sustentado da iniciativa.</p>
+<details>
+<summary>Exemplo de uso de evidência · outro processo, sem escrever o parecer avaliativo</summary>
+<p>Considere um exercício inventado de conferência de um catálogo público. O registro E1 identifica um item cujo rascunho tinha uma data diferente da referência aprovada. A conferência foi feita por leitura, sem execução de sistema.</p>
+<p>O argumento pode usar E1 para justificar a necessidade de conferir datas na tarefa de catalogação. E2 pode registrar que foi examinado apenas aquele item, o que impede estimar a frequência do problema no acervo.</p>
+<p>O caminho é <strong>registro localizado → critério aplicado → resultado → efeito na decisão → limite</strong>. No seu parecer, selecione uma evidência real do seu percurso avaliativo; não use este exemplo inventado como resultado de AV1/AV2.</p>
+</details>
+<h4>Parte 4 — Dois riscos com mecanismos</h4>
+<p>Para cada risco, desenvolva <strong>consequência → mecanismo → responsável → evidência de cumprimento → exceção/interrupção</strong>. As propostas da AV1.5 podem ser reaproveitadas se forem pertinentes ao recorte e adaptadas ao que a recomendação permite.</p>
+<p>Explique como alguém verificaria o controle: qual registro examina, que condição procura e o que faz se ela não estiver satisfeita. Dois nomes de risco sem mecanismos não completam esta parte. Preserve a distinção entre a evidência já disponível e o comprovante que um controle futuro produziria.</p>
+<h4>Parte 5 — Maturidade e próximo passo</h4>
+<p>Retome o <strong>cartão M1–M6</strong>, declare o objeto, aplique a definição e fundamente o estágio por fatos. Compare com um estágio alternativo, explique a fronteira e a lacuna.</p>
+<p>Proponha tarefa, participantes, duração, dados e responsável. Especifique métrica, fórmula/unidade, coleta, referência e limite; para taxas, indique numerador/denominador. Escreva avanço/interrupção e quem decide ou age. Cada meta pertence à proposta futura, não a uma série de resultados já produzida.</p>
+<p>Você pode melhorar seu registro de AV1.6 para integrá-lo ao parecer. O importante é que o próximo passo responda à recomendação e à lacuna identificada, sem inventar a execução do plano.</p>
+<h4>Parte 6 — Duas fontes de L0 aplicadas</h4>
+<p>Use as duas referências já lidas: <strong>Fan et al., versão 4, 2023</strong>, e <strong>Hou et al., versão 6, 2024</strong>, conforme a orientação de <a href="../estudo-autonomo.html">L0</a>. Não é exigida pesquisa nova nas duas horas da AV3.</p>
+<p>Para cada fonte, desenvolva cinco peças:</p>
+<ol>
+<li><strong>Afirmação em suas palavras:</strong> o que o trecho efetivamente sustenta.</li>
+<li><strong>Localização:</strong> seção ou página da versão consultada, permitindo encontrá-lo.</li>
+<li><strong>Decisão à qual se aplica:</strong> em que parte do parecer esse argumento entra.</li>
+<li><strong>Inferência própria:</strong> como você relaciona a fonte ao caso.</li>
+<li><strong>Limite ou contraponto:</strong> por que o resultado da fonte não é uma garantia automática para o seu recorte.</li>
+</ol>
+<p>As duas fontes devem participar do argumento. Colocar links no anexo sem utilizá-las na análise não demonstra aplicação. Você pode integrar F1/F2 às seções anteriores e indicar a remissão no campo de fundamentação do modelo.</p>
+<details>
+<summary>Estrutura de parágrafo bibliográfico · preencher com a leitura realizada</summary>
+<p>“Na [seção/página] da [versão], [autores] discutem [afirmação conferida]. Uso esse argumento para fundamentar [decisão ou critério do parecer]. No meu recorte, concluo [inferência própria], em conjunto com [evidência local]. A aplicação é limitada por [diferença de tarefa, contexto ou avaliação], por isso não concluo [extrapolação que a fonte não sustenta].”</p>
+<p>Os colchetes são campos de trabalho, não uma citação pronta. Consulte o texto e preencha a localização real: não invente página, número de seção ou afirmação. Identifique <strong>autores, título, ano/versão e referência/link</strong> no anexo. Não há estilo bibliográfico institucional adicional informado.</p>
+</details>
+<h3>5. Separe parecer e anexo</h3>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Até 3 páginas de parecer</th>
+<th>Até 2 páginas de evidências/referências</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decisão, problema e comparação de alternativas.</td>
+<td>E1 com origem, identificação e trecho essencial; entrada/fato, critério, resultado, método e status.</td>
+</tr>
+<tr>
+<td>Autonomia, responsável, critério e intervenção.</td>
+<td>E2 com trecho contrário ou limitação identificável.</td>
+</tr>
+<tr>
+<td>Interpretação de E1 e efeito de E2 na recomendação.</td>
+<td>Trechos adicionais somente se necessários à conferência do argumento.</td>
+</tr>
+<tr>
+<td>Dois riscos e mecanismos; maturidade, lacuna e próximo passo.</td>
+<td>F1 e F2: referência completa, versão e localização.</td>
+</tr>
+<tr>
+<td>Afirmações de F1/F2 aplicadas às decisões, com limites.</td>
+<td>Procedência e declaração de assistência conforme o modelo.</td>
+</tr>
+</tbody>
+</table></div>
+<p>No corpo, use remissões curtas, como <strong>“E1, linha identificada no anexo”</strong>. No anexo, mantenha apenas o que permite conferir o argumento. Não use as duas páginas de anexo para deslocar partes obrigatórias do parecer que ficaram sem explicação.</p>
+<h3>6. Reserve os últimos 30 minutos para revisar</h3>
+<p>Confira a rubrica, os vínculos E1/E2/F1/F2, o status dos registros e os limites de páginas. Verifique se os controles e o próximo passo são compatíveis com sua recomendação. Se a opção é não adotar no recorte, explique como o encaminhamento e as condições propostas refletem isso.</p>
+<p>Finalize autoria, origem dos dados e declaração de IA. O prazo proposto é <strong>10/10/2026, 23h59, Brasília</strong>; canal e formato acadêmico serão informados pelo professor. Não se exige pesquisa nova, piloto, protótipo, defesa, vídeo, publicação, conta ou API.</p>
+<h3>Antes de enviar</h3>
+<ul>
+<li>Declarei tarefa, beneficiário, resultado e recomendação justificada.</li>
+<li>Comparei ao menos duas alternativas no total, incluindo o processo sem IA.</li>
+<li>Delimitei autonomia, responsável, verificação e intervenção.</li>
+<li>Apliquei uma evidência identificável e tratei uma limitação/contraponto.</li>
+<li>Desenvolvi dois riscos com mecanismo, responsável, evidência e tratamento de exceção.</li>
+<li>Justifiquei maturidade por fatos, comparei estágio alternativo e propus passo, métrica, referência e condições.</li>
+<li>Apliquei as duas fontes de L0, com localização e alcance distinguidos da inferência própria.</li>
+<li>Identifiquei procedência, eventual IA e propostas futuras; respeitei 3 + 2 páginas.</li>
+</ul>
+<div class="modelos">
+<p><a class="button-link" href="../avaliacoes/av3/README.html">Enunciado de AV3</a>
+<a class="button-link" href="../avaliacoes/av3/template-entrega.md" download>Baixar modelo editável · AV3</a></p>
+<details class="template"><summary>Ver e copiar o modelo de resposta · AV3</summary>
+<p>Copie para seu editor, substitua os campos em branco e confira o número de páginas. Esta página não armazena respostas.</p>
+<button type="button" data-copy="modelo-av3">Copiar campos do modelo</button>
+<pre id="modelo-av3" class="modelo" tabindex="0"><code># Entrega individual — AV3
+
+Estudante: ___ · Data: ___ · Caso/recorte: ___
+**Limites:** parecer até três páginas; evidências/referências até duas páginas. Enunciado.
+
+## Parecer
+
+**1. Recomendação e problema.** Recomendo ___ para a tarefa ___, cujo beneficiário é ___ e resultado esperado é ___. As restrições relevantes são ___.
+
+| Alternativa | Processo e recursos | Benefício esperado / pressuposto | Limite, consequência do erro e esforço de verificação |
+|---|---|---|---|
+| A — sem IA | | | |
+| B — outra alternativa | | | |
+
+**Minha comparação e razão para a recomendação:** ___
+
+**2. Autonomia e responsabilidade.** Etapa/tarefa assistida, se recomendada: ___
+O que permanece sob aceite humano / critério e responsável: ___
+Condição de intervenção, tratamento de exceção e reversibilidade/recusa: ___
+
+**3. Verificação e contraponto.** Evidência E1 do anexo: ___; critério aplicado: ___; resultado/status: ___; interpretação que sustenta a recomendação: ___.
+Limitação ou evidência contrária E2: ___; efeito na recomendação e condição que a mudaria: ___.
+
+**4. Riscos e mecanismos.**
+
+| Risco e consequência no recorte | Mecanismo | Responsável | Evidência e como conferir o controle | Exceção/interrupção |
+|---|---|---|---|---|
+| 1 | | | | |
+| 2 | | | | |
+
+**5. Maturidade e próximo passo.** Objeto e estágio: ___; definição adotada: ___; fatos que o sustentam: ___; estágio rival e motivo da distinção: ___; lacuna: ___.
+Passo proposto — tarefa, participantes, duração, dados e responsável: ___
+Métrica (fórmula/unidade e, se taxa, numerador/denominador): ___
+Coleta e referência de comparação: ___; limite da medida: ___
+Condição proposta de avanço / quem decide: ___
+Condição proposta de interrupção / quem age: ___
+
+**6. Fundamentação aplicada.** Integre estes argumentos às seções anteriores ou registre-os aqui com remissão explícita:
+
+- **F1:** afirmação da fonte em minhas palavras e localização: ___; decisão do parecer a que se aplica: ___; o que a fonte sustenta: ___; minha inferência sobre o caso: ___; limite/contraponto: ___.
+- **F2:** afirmação da fonte em minhas palavras e localização: ___; decisão do parecer a que se aplica: ___; o que a fonte sustenta: ___; minha inferência sobre o caso: ___; limite/contraponto: ___.
+
+## Anexo — evidências, referências e procedência
+
+**E1 — origem/atividade, arquivo ou identificação e trecho exato:** ___
+Entrada ou fato / esperado ou critério / resultado e método / status observado, inferido ou simulado: ___
+**E2 — origem e trecho ou limitação/contraponto da evidência:** ___
+**Outros trechos essenciais de apoio às decisões, se necessários:** ___
+
+**F1 — referência de L0:** autores: ___; título: ___; ano/versão: ___; seção/página consultada: ___; referência/link identificável: ___.
+**F2 — referência de L0:** autores: ___; título: ___; ano/versão: ___; seção/página consultada: ___; referência/link identificável: ___.
+
+**Procedência:** materiais simulados reaproveitados: ___; observações próprias: ___; inferências: ___; passos e metas propostos: ___.
+**IA:** não utilizada / ferramenta-modelo visível: ___; data: ___; tarefa/contexto: ___; trecho aproveitado: ___; verificação e intervenção próprias: ___. Use “não informado” para metadados indisponíveis.
+
+**Checklist:** [ ] alternativas; [ ] autonomia; [ ] evidência/contraponto; [ ] dois riscos; [ ] maturidade/métrica; [ ] duas fontes aplicadas; [ ] procedência; [ ] 3+2 páginas.</code></pre>
+</details></div>
+
+<div class="secao"><h2 id="rubricas">Como a rubrica aparece na sua resposta</h2></div>
+<p><strong>AV1 vale 20% da nota final</strong>, pela média simples dos desafios dos blocos com presença; não são 20% para cada desafio. <strong>AV2 vale 30% e AV3 vale 50%.</strong> Os pesos abaixo são internos ao instrumento. A composição e os prazos constam como proposta docente no documento de avaliação; regras institucionais seguem a comunicação acadêmica.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério de AV1</th>
+<th>Peso</th>
+<th>AV1.4</th>
+<th>AV1.5</th>
+<th>AV1.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicação e decisão</td>
+<td>30%</td>
+<td>Decisão por R2, manter/ajustar e responsável.</td>
+<td>Encaminhamento e comparação de alternativa viável.</td>
+<td>Estágio, definição, contraponto e próximo passo coerente.</td>
+</tr>
+<tr>
+<td>Evidência e raciocínio</td>
+<td>40%</td>
+<td>Entrada, esperado, retorno, mecanismo e asserção localizáveis.</td>
+<td>Fatos e duas relações completas entre risco, mecanismo, responsável e registro.</td>
+<td>Fatos M1–M6, alcance e distinção entre ocorrido, planejado e inferido.</td>
+</tr>
+<tr>
+<td>Limites, alternativa e revisão</td>
+<td>30%</td>
+<td>Ajuste, revalidação, limite e condição de revisão.</td>
+<td>Incerteza, exceção e condição para rever.</td>
+<td>Métrica, coleta, referência, limite e avanço/interrupção.</td>
+</tr>
+</tbody>
+</table></div>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério de AV3</th>
+<th>Peso</th>
+<th>Onde conferir no modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problema e alternativas</td>
+<td>15%</td>
+<td>Parte 1: recorte, comparação e recomendação.</td>
+</tr>
+<tr>
+<td>Autonomia e responsabilidade</td>
+<td>15%</td>
+<td>Parte 2: etapa assistida, aceite, responsável e intervenção.</td>
+</tr>
+<tr>
+<td>Evidências de verificação</td>
+<td>25%</td>
+<td>Parte 3 e E1/E2: aplicação, resultado e contraponto/limite.</td>
+</tr>
+<tr>
+<td>Riscos e mecanismos</td>
+<td>20%</td>
+<td>Parte 4: dois riscos com controles examináveis.</td>
+</tr>
+<tr>
+<td>Maturidade e próximo passo</td>
+<td>15%</td>
+<td>Parte 5: fatos, definição, lacuna, passo e medida.</td>
+</tr>
+<tr>
+<td>Fundamentação e argumentação</td>
+<td>10%</td>
+<td>Parte 6 e F1/F2: duas fontes aplicadas, localização e limites.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Os níveis são <strong>0 — ausente; 1 — incipiente; 2 — adequado; 3 — consistente</strong>. A diferença está na aplicação, sustentação e possibilidade de conferir o raciocínio. Extensão de texto, ferramenta paga, câmera ou quantidade de comandos não substituem evidência.</p>
+<details><summary>Descritores oficiais completos e conversão em nota</summary><h3>Rubrica comum de AV1</h3><p>Os enunciados trazem os indicadores específicos de cada desafio. A rubrica é aplicada seis vezes; as notas dos blocos com presença formam a média AV1.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Peso</th>
+<th>0 — Ausente</th>
+<th>1 — Incipiente</th>
+<th>2 — Adequado</th>
+<th>3 — Consistente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aplicação e decisão</strong></td>
+<td>30%</td>
+<td>Não responde à decisão solicitada</td>
+<td>Repete conceito ou conclusão da aula sem aplicar à nova situação</td>
+<td>Aplica o conceito às restrições do enunciado e decide coerentemente</td>
+<td>Compara alternativa plausível, reconhece diferenças entre situações e justifica a escolha</td>
+</tr>
+<tr>
+<td><strong>Evidência e raciocínio</strong></td>
+<td>40%</td>
+<td>Não apresenta critério nem evidência</td>
+<td>Afirma que funciona/é seguro/é maduro sem registro examinável</td>
+<td>Liga decisão a requisito, trecho, tabela, teste ou fato e descreve a verificação</td>
+<td>Explicita esperado e encontrado, examina contraexemplo ou evidência contrária e permite auditar a análise</td>
+</tr>
+<tr>
+<td><strong>Limites, alternativa e revisão</strong></td>
+<td>30%</td>
+<td>Não indica limite</td>
+<td>Cita risco ou alternativa genéricos</td>
+<td>Identifica limitação concreta e ação compatível para tratá-la</td>
+<td>Explica efeito do limite, alternativa possível e condição verificável para mudar a decisão</td>
+</tr>
+</tbody>
+</table></div>
+<p>Em AV1.1/5/6, evidência pode ser fato e restrição do cenário. Em AV1.2/3/4, inspeção de tabela ou trecho é válida se o raciocínio for verificável. Não executar código não reduz nota por si só; afirmar execução inexistente compromete a rastreabilidade.</p><h3>Rubrica de AV3</h3><p>Assumir recomendação sobre a iniciativa de assistência de IA à manutenção de Fila Clara, confrontando ao menos duas alternativas no total — incluindo o processo sem IA — e reutilizando L0, AV1 e AV2. O dossiê de AV3 adota a variante M1–M6 de AV1.6, com responsável e revisão definidos, mas sem execução do plano; identificar esse recorte ao usar evidências. Uma situação profissional abstrata com evidências equivalentes também é aceita. Não se exige pesquisa nova nem execução de piloto nas 2h.</p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Peso</th>
+<th>0 — Ausente</th>
+<th>1 — Incipiente</th>
+<th>2 — Adequado</th>
+<th>3 — Consistente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Problema e alternativas</strong></td>
+<td>15%</td>
+<td>Sem tarefa/problema definido</td>
+<td>Promessa ampla de ganho sem delimitação</td>
+<td>Define tarefa, beneficiário, resultado e alternativa sem IA</td>
+<td>Compara alternativas sob restrições e justifica por que a recomendação é preferível</td>
+</tr>
+<tr>
+<td><strong>Autonomia e responsabilidade</strong></td>
+<td>15%</td>
+<td>Não define delegação/responsável</td>
+<td>Uso genérico de IA sem fronteira de aceite</td>
+<td>Define etapa assistida, verificação humana, responsável e intervenção</td>
+<td>Relaciona autonomia à consequência do erro e trata exceção, reversibilidade e aceite</td>
+</tr>
+<tr>
+<td><strong>Evidências de verificação</strong></td>
+<td>25%</td>
+<td>Aceita por plausibilidade</td>
+<td>Menciona teste/registro sem localizá-lo ou só descreve o que faria</td>
+<td>Aplica critério a uma evidência identificável, com limite</td>
+<td>Confronta evidência favorável e contraponto/limitação, delimitando conclusão sem extrapolação causal</td>
+</tr>
+<tr>
+<td><strong>Riscos e mecanismos</strong></td>
+<td>20%</td>
+<td>Ignora riscos</td>
+<td>Lista riscos sem controles operáveis</td>
+<td>Liga ao menos dois riscos a mecanismo, responsável e evidência de controle</td>
+<td>Explica como testar o controle, tratar exceção e interromper ação sem condição de uso</td>
+</tr>
+<tr>
+<td><strong>Maturidade e próximo passo</strong></td>
+<td>15%</td>
+<td>Não classifica nem propõe avanço</td>
+<td>Classifica por impressão ou confunde plano e execução</td>
+<td>Define estágio por fatos, lacuna e passo com métrica/critério de decisão</td>
+<td>Compara estágio alternativo e define avanço/interrupção com referência e medida operacionalizável</td>
+</tr>
+<tr>
+<td><strong>Fundamentação e argumentação</strong></td>
+<td>10%</td>
+<td>Sem fonte ou argumento próprio</td>
+<td>Lista fontes sem ligação às afirmações ou as usa como garantia genérica</td>
+<td>Aplica duas referências de L0 a afirmações específicas, com localização e fonte distinta de inferência</td>
+<td>Confronta alcance/limites das fontes com o caso, integra literatura/evidência e explicita tensão ou contraponto</td>
+</tr>
+</tbody>
+</table></div>
+<p>Para métricas em forma de taxa, indicar numerador e denominador. Metas criadas são propostas, não resultados observados. Identificar autores, título, ano/versão, seção ou página consultada e referência/link; não impor estilo bibliográfico institucional não informado. Fonte sugerida por IA deve ser conferida.</p><h3>Conversão dos níveis em nota</h3><div class="tablewrap" tabindex="0" role="region" aria-label="Tabela; role horizontalmente se necessário"><table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Significado comum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0 — Ausente</strong></td>
+<td>Elemento não apresentado ou sem conteúdo avaliável para o critério</td>
+</tr>
+<tr>
+<td><strong>1 — Incipiente</strong></td>
+<td>Elemento genérico, incompleto ou sem sustentação suficiente</td>
+</tr>
+<tr>
+<td><strong>2 — Adequado</strong></td>
+<td>Aplicação correta ao caso, com evidência e limite explícitos</td>
+</tr>
+<tr>
+<td><strong>3 — Consistente</strong></td>
+<td>Decisão sustentada por comparação, verificação auditável e tratamento das condições relevantes</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nota do instrumento = <strong>10 × soma(peso do critério × nível/3)</strong>, usando pesos como fração. Atribuir um nível inteiro por critério e apontar a evidência que sustenta o julgamento. A ausência de um elemento afeta o critério correspondente, sem zerar automaticamente toda a entrega. Arredondar somente o resultado final conforme a regra acadêmica.</p>
+<p>Exemplo em AV1: níveis 3, 2 e 2 → 10 × (0,30×3/3 + 0,40×2/3 + 0,30×2/3) = <strong>7,67</strong>. Todos os níveis 2 resultam em 6,67; todos os níveis 3 resultam em 10. Essa conversão não define a nota mínima institucional de aprovação.</p></details>
+
+<div class="secao"><h2 id="duvidas">Dúvidas de preenchimento e revisão final</h2></div>
+<h3>“Qual é a diferença entre esperado, inferido e observado na AV1.4?”</h3>
+<p>O esperado vem de R2. O inferido é o retorno que você deduz seguindo o código. O observado exige uma execução efetiva. Você pode completar a atividade por inspeção; apenas mantenha o método explícito, inclusive na conferência do ajuste.</p>
+<h3>“Preciso obter aprovação de segurança para a AV1.5?”</h3>
+<p>Não. A atividade pede analisar um cenário hipotético e propor regras, responsáveis e registros. Descreva como uma exceção seria encaminhada e conferida. Não use chamado/log real nem invente uma decisão de segurança já emitida.</p>
+<h3>“Tenho que executar o plano de AV1.6?”</h3>
+<p>Não. Você usa M1–M6 como evidência do diagnóstico e propõe o próximo passo. Coleta, metas e condições permanecem futuras. A resposta explica como resultados ajudariam a decidir, sem criar medições inexistentes.</p>
+<h3>“Posso reaproveitar minha própria resposta na AV3?”</h3>
+<p>Sim. Esse reuso faz parte do trabalho. Selecione os trechos pertinentes e explique sua função no parecer. Você pode revisar seu argumento, mas precisa preservar a origem e o status das evidências. Reaproveitar não significa transferir todos os fatos de qualquer cenário para a variante adotada na AV3.</p>
+<h3>“E2 precisa ser outra execução?”</h3>
+<p>Não. O dossiê pede limitação ou contraponto. Você pode identificar uma limitação concreta de E1 e explicar seu efeito. Se usar evidência contrária, localize-a; se usar limite, diga exatamente o que o registro não permite concluir.</p>
+<h3>“Uma lista de bibliografia resolve a fundamentação?”</h3>
+<p>Não. Para cada uma das duas fontes de L0, aplique uma afirmação a uma decisão do parecer, localize o trecho e explicite o limite. A relação entre fonte e caso é uma inferência sua e deve ser identificada.</p>
+<h3>“E se eu não tiver um resultado de execução?”</h3>
+<p>Use os registros de inspeção, transcrições ou fatos simulados permitidos, identificando corretamente a modalidade. Não transforme “poderia executar” em “executei”. Se faltar uma evidência obrigatória, identifique a lacuna e consulte o professor sobre o encaminhamento acadêmico; não invente o registro.</p>
+<h3>“Como caber no limite?”</h3>
+<p>Use o modelo, trechos essenciais e remissões por identificador. Corte instruções e repetições, mantendo decisão, evidência e limite. Nas AV1, as tabelas integram a página única; na AV3, análise e anexo têm limites próprios.</p>
+<h3>“O guia define um novo prazo?”</h3>
+<p>Não. As datas reproduzem os enunciados, e o prazo da AV3 está identificado como proposto. Reabertura, atraso, reposição, canal e formato de envio dependem da comunicação acadêmica. Esta página não confirma recebimento.</p>
+<h3>Conferência final em sete perguntas</h3>
+<ol>
+<li><strong>Insumo:</strong> usei a atividade e a variante corretas?</li>
+<li><strong>Critério:</strong> expliquei a referência antes da conclusão?</li>
+<li><strong>Evidência:</strong> o leitor consegue localizar o fato, trecho ou comparação?</li>
+<li><strong>Status:</strong> distingui simulação, inspeção, execução e proposta?</li>
+<li><strong>Decisão:</strong> comparei alternativas ou tratei o contraponto solicitado?</li>
+<li><strong>Limite:</strong> expliquei o efeito da lacuna e uma condição para rever?</li>
+<li><strong>Entrega:</strong> declarei autoria/IA, respeitei as páginas e conferi o canal informado?</li>
+</ol>
+<div class="secao"><h2 id="materiais">Materiais de referência</h2></div>
+<ul>
+<li><a href="../caso/regras.html">Contrato de Fila Clara</a>.</li>
+<li><a href="../exercicios/aula-4/README.html">AV1.4 — enunciado</a> e <a href="../exercicios/aula-4/template-registro.md">modelo editável</a>.</li>
+<li><a href="../exercicios/aula-5/README.html">AV1.5 — enunciado</a> e <a href="../exercicios/aula-5/template-registro.md">modelo editável</a>.</li>
+<li><a href="../exercicios/aula-6/README.html">AV1.6 — enunciado</a> e <a href="../exercicios/aula-6/template-registro.md">modelo editável</a>.</li>
+<li><a href="../avaliacoes/av3/README.html">AV3 — dossiê e instruções</a> e <a href="../avaliacoes/av3/template-entrega.md">modelo editável</a>.</li>
+<li><a href="../avaliacoes/av2/README.html">AV2 — registros a reutilizar</a> e <a href="../avaliacoes/av2/insumos.html">insumos de verificação</a>.</li>
+<li><a href="../estudo-autonomo.html">L0 — leitura e fichamento</a>.</li>
+<li><a href="../avaliacao.html">Avaliação e rubricas completas</a>.</li>
+<li><a href="guia-atividades-aula4.html">Guia anterior — AV1.1, AV1.2, AV1.3 e AV2</a>.</li>
+<li><a href="../README.html">Índice do material da turma</a>.</li>
+</ul>
+<p>Este guia explica os enunciados e não cria entregas adicionais. Exemplos didáticos usam outros recortes para mostrar o formato do raciocínio; as saídas avaliativas, decisões, diagnóstico e parecer permanecem individuais.</p>
+<footer>CESAR School · D1.1 · Turma 2026.2 · Guia de atividades · 03/10/2026.<br>Fonte: enunciados, modelos, contrato e rubricas do material discente. Horários de Brasília.</footer>
+<a class="voltar" href="#topo" aria-label="Voltar ao início do guia">↑ Início</a>
+</main>
+</body>
+</html>

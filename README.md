@@ -4,6 +4,12 @@ Este pacote apoia as seis aulas de **Engenharia de Software na Era da IA Generat
 
 O caso e suas verificações já podem ser executados. O professor conduz as demonstrações; em B3, há também [25min de execução acompanhada](apoio/execucao-acompanhada-b3.md) no próprio ambiente, sem entrega ou nota. Cada bloco reserva 35min a um desafio avaliativo individual com consulta; as instruções indicam insumos próprios, entregável e rubrica. Não há entrega coletiva ou síntese adicional obrigatória.
 
+## Orientação das atividades na aula 4
+
+O [guia passo a passo de AV1.1, AV1.2, AV1.3 e AV2](apoio/guia-atividades-aula4.html) reúne dados, instruções, exemplos de preenchimento, modelos e rubricas. A primeira hora da aula 4 será dedicada a essa orientação; a página também serve para consulta individual e impressão.
+
+O [guia de AV1.4, AV1.5, AV1.6 e AV3](apoio/guia-atividades-aula6.html) detalha revisão, governança, maturidade e parecer integrador, com insumos, passos de preenchimento, exemplos, modelos copiáveis e rubricas.
+
 ## Preparação do ambiente
 
 Obtenha o pacote disponibilizado pelo professor e abra esta pasta. A execução local usa Python e sua biblioteca padrão; o ambiente de preparação foi verificado com **Python 3.13.3**. Não há dependências adicionais. Um assistente de IA no navegador pode apoiar as práticas; não é necessário contratar API. O caminho textual usa os materiais de `apoio/` quando não houver acesso à ferramenta ou ao ambiente local. A instalação local não é condição para demonstrar os objetivos da disciplina.
