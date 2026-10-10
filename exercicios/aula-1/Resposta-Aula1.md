@@ -29,4 +29,4 @@ Origem: cartões C1–C3 fictícios do enunciado.
 
 **minha verificação/intervenção:** conferi a saída `[EX-01, EX-03]` contra a R2 (o chamado `fechado` foi excluído e a ordem de entrada foi mantida); alterei o departamento do EX-02 para Oficina; reescrevi eu mesmo as células da tabela C1–C3; as ideias da comparação do C2 (restrição, risco e condição dos dados reais) partiram de mim. 
 
-**Revisão:** [ ] três decisões; [ ] evidência localizada; [ ] alternativa e limite; [ ] até uma página.
+**Revisão:** [x] três decisões; [x] evidência localizada; [x] alternativa e limite; [x] até uma página.

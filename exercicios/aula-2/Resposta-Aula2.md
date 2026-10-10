@@ -20,4 +20,4 @@
 **Origem dos dados e como fiz a análise:** respostas didáticas simuladas; cálculos/inspeções próprios: somas dos dois pares de A e do par de B conferidas com R1 e leitura dos trechos citados de A e B; execução real: não realizada. Tokens/custo/latência/configuração: não informados.
 **IA na produção do registro:** utilizada; ferramenta-modelo visível: Claude (Cowork), modelo configurado `claude-opus-5-5`; tarefa/contexto: resumir o enunciado, explicar os campos, revisar minhas respostas e corrigir a redação; trecho aproveitado e verificação própria: redação do critério de generalização, da análise da afirmação geral de B, da alternativa de verificação e desta declaração; conferi os cálculos e as citações com R1 e com o enunciado.
 
-**Revisão:** [x] critérios; [x] dois pares; [x] análise de B; [x] decisões/limites; [ ] uma página.
+**Revisão:** [x] critérios; [x] dois pares; [x] análise de B; [x] decisões/limites; [x] uma página.
