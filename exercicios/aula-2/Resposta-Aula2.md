@@ -14,10 +14,10 @@
 **Contraexemplo ou condição não coberta:** (3, 1), que deve dar `media`, ou (1, 1), que deve dar `baixa`; nenhum foi testado por B.
 
 **Decisão A + motivo:** Rejeitar, porque vai contra o que foi definido por R1.
-**Decisão B + motivo:** Aceitar parcialmente. Parte de sua afirmação está correta, mas a falta de outros testes invalida a parte que diz que está sempre certa.
+**Decisão B + motivo:** Aceitar parcialmente: aceito a classificação do par (2,3); rejeito a afirmação de que o modelo é determinístico e sempre correto, porque a falta de outros testes não a sustenta.
 **Alternativa de verificação e condição que mudaria uma decisão:** Conferir as 9 combinações de impacto e urgência contra R1, repetindo cada uma com a configuração registrada. B poderia ser aceita por inteiro se esses resultados fossem apresentados e coincidissem com R1; A só seria revista se o contrato passasse a definir a prioridade apenas pelo impacto.
 
 **Origem dos dados e como fiz a análise:** respostas didáticas simuladas; cálculos/inspeções próprios: somas dos dois pares de A e do par de B conferidas com R1 e leitura dos trechos citados de A e B; execução real: não realizada. Tokens/custo/latência/configuração: não informados.
-**IA na produção do registro:** utilizada; ferramenta-modelo visível: Claude (Cowork), modelo configurado `claude-opus-5-5`; tarefa/contexto: resumir o enunciado, explicar os campos, revisar minhas respostas e corrigir a redação; trecho aproveitado e verificação própria: redação do critério de generalização, da análise da afirmação geral de B, da alternativa de verificação e desta declaração; conferi os cálculos e as citações com R1 e com o enunciado.
+**IA na produção do registro:** utilizada; ferramenta-modelo visível: Claude (Cowork), modelo configurado `claude-opus-5-5`; tarefa/contexto: resumir o enunciado, explicar os campos, revisar minhas respostas e corrigir a redação; trecho aproveitado e verificação própria: redação do critério de generalização, da análise da afirmação geral de B, da alternativa de verificação e desta declaração; conferi os cálculos e as citações com R1 e com o enunciado. Correções finais de redação aplicadas com Claude Code (`claude-sonnet-5-5`), a partir da revisão.
 
 **Revisão:** [x] critérios; [x] dois pares; [x] análise de B; [x] decisões/limites; [x] uma página.

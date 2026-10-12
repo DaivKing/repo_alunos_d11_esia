@@ -5,11 +5,11 @@ Origem: cartões C1–C3 fictícios do enunciado.
 
 | Cartão | Processo sem IA / entrada → saída | Modalidade e justificativa ligada ao cartão | Verificação de aceite | Responsável humano |
 |---|---|---|---|---|
-| C1 |Eu revisaria a regra R2 no contrato e escreveria critérios de aceite: incluir aberto e em_andamento, excluir fechado e preservar a ordem de entrada. |**Com assistência**. É uma confirmação do que cada estado implica na listagem, eu escreveria as definições e revisaria com IA. | A listagem fictícia deve conter apenas os chamados `aberto` e `em_andamento`, na mesma ordem de entrada; os `fechado` devem ser excluídos. |A pessoa responsável pela manutenção. |
-| C2 | Revisaria a regra R3 e deixaria explícito que um chamado só fica visível para pessoas do mesmo departamento, separando Oficina e Laboratório, independentemente de estado ou prioridade.|**Com assistência**. A regra envolve visibilidade, o que a torna mais importante e trabalhosa que uma listagem.|Chamados da Oficina -> ficam visíveis apenas para funcionários da Oficina. Chamados do Laboratório ficam visíveis apenas para funcionários do Laboratório.| Os funcionários de cada departamento. |
-| C3 |Não aprovaria até ter mais dados, independentemente da urgência. A urgência da operação não justifica a falta de informação. Sem informações e um responsável, a operação parece um risco na minha visão.| **Sem delegar a decisão**. O risco de delegar essa tarefa à IA é grande e não isentaria minha responsibilidade nessa escolha.|Sem informações suficientes, a mudança não deve ser aprovada.| Eu mesmo. |
+| C1 | Critérios de aceite por R2: incluir `aberto` e `em_andamento`, excluir `fechado`, manter a ordem. | **Com assistência.** Confirma o que cada estado implica na listagem: a IA rascunha os critérios e eu confiro contra R2. | Listagem só com `aberto` e `em_andamento`, na ordem de entrada; `fechado` fora. | Pessoa responsável pela manutenção. |
+| C2 | Teste de R3: chamado da Oficina, estado `fechado`; pessoa do Laboratório → `pode_visualizar` = falso. Repetiria com `aberto` e `em_andamento` (o estado não muda o resultado). | **Com assistência.** Visibilidade é mais importante e trabalhosa que uma listagem. | Chamado de cada departamento visível só para ele, em qualquer estado. | Pessoa responsável pela manutenção. |
+| C3 | Não aprovaria sem mais dados: urgência não justifica falta de informação. | **Sem delegar a decisão.** Delegar à IA é arriscado e não isentaria minha responsabilidade. | Antes de aprovar: regra nova escrita, dados afetados, verificações feitas e aprovador identificados. | Gestão responsável / responsável por segurança. |
 
-**Trecho essencial de evidência (cartão, entrada/saída ou informação necessária e como sustenta minha escolha):** Usando a reposta da **C1** como exemplo: 
+**Exemplo que sustenta minha decisão (C1; entrada e saída esperada e relação com minha decisão):** entrada:
 
 | id | departamento | estado | impacto | urgencia |
 |---|---|---|---|---|
@@ -17,16 +17,12 @@ Origem: cartões C1–C3 fictícios do enunciado.
 | EX-02 | Oficina | fechado | 3 | 3 |
 | EX-03 | Oficina | aberto | 1 | 2 |
 
-**Saída esperada de `listar_ativos`:** `[EX-01, EX-03]`
+Saída esperada de `listar_ativos`: `[EX-01, EX-03]`. Ele ajuda a conferir o critério do C1: o `fechado` (EX-02) sai e a ordem de entrada é mantida. Não executei código.
 
-**Alternativa para o cartão C2:** Poderia ser feita **Sem IA**.
+**Alternativa para o cartão C2:** sem IA.
+**Comparação com minha escolha (restrição e consequência):** R3 vale em qualquer estado dos dois departamentos. Sem IA, eu escreveria todas as combinações: mais tempo, menos risco de aceitar um caso errado. Com assistência, a IA propõe os casos mais rápido, mas eu confiro cada um contra R3, pois um caso errado deixaria passar acesso indevido.
+**Limite da delegação e condição para rever a escolha:** a IA sugere casos; aceitar o teste e responder por ele fica comigo. Mudaria para "sem IA" se os dados fossem reais.
 
-**Comparação com minha escolha (restrição e consequência):**  o cartão tem dois departamentos e três estados, e a R3 vale independentemente do estado ou da prioridade. Por isso o teste precisa cobrir várias combinações. Sem IA, eu escreveria todas elas, o que leva mais tempo, mas reduz o risco de aceitar um caso sugerido que esteja errado. Com assistência, a IA propõe os casos mais rápido, mas eu preciso conferir cada um contra a R3, porque um caso errado numa regra de visibilidade deixaria passar um acesso indevido.
+**Uso de IA na elaboração deste registro:** utilizada / ferramenta e modelo visíveis: Claude (Cowork), `claude-opus-5-5`; tarefa delegada e contexto: prompt "crie três chamados fictícios para colocar como exemplo para C1", com acesso ao enunciado, ao contrato e a este registro; trecho aproveitado: tabela EX-01 a EX-03 e organização da comparação do C2; minha verificação/intervenção: conferi `[EX-01, EX-03]` contra R2, alterei o departamento do EX-02, reescrevi a tabela C1–C3, e as ideias da comparação do C2 são minhas. O raciocínio e a decisão registrados são meus. Correções finais de redação aplicadas com Claude Code (`claude-sonnet-5-5`), a partir da revisão.
 
-**Limite da delegação e condição para rever a escolha:** a IA pode sugerir casos de teste, mas aceitar o teste e responder por ele fica comigo. Eu mudaria para "Sem IA" se os chamados tivessem dados reais dos departamentos, em vez dos dados fictícios do caso.
-
-**Procedência/IA:** utilizada / ferramenta e modelo visíveis: Claude (Cowork), modelo claude-opus-5-5; tarefa delegada e contexto: prompt “crie três chamados ficticios para colocar como exemplo para C1 no trecho de evidência”, com acesso ao enunciado, ao contrato e a este registro; trecho aproveitado: tabela de chamados EX-01 a EX-03 e saída esperada; redação da comparação e do limite da delegação do C2, organizada pela IA a partir das minhas ideias (restrição, risco e condição dos dados reais). 
-
-**minha verificação/intervenção:** conferi a saída `[EX-01, EX-03]` contra a R2 (o chamado `fechado` foi excluído e a ordem de entrada foi mantida); alterei o departamento do EX-02 para Oficina; reescrevi eu mesmo as células da tabela C1–C3; as ideias da comparação do C2 (restrição, risco e condição dos dados reais) partiram de mim. 
-
-**Revisão:** [x] três decisões; [x] evidência localizada; [x] alternativa e limite; [x] até uma página.
+**Revisão:** [x] três decisões; [x] exemplo explicado; [x] alternativa e limite; [x] até uma página.
